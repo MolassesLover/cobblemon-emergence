@@ -1,0 +1,16 @@
+filename = 'happy_ghast_legacy-1.8-1.20.1-fabric.jar'
+name = 'Happy Ghast Legacy'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'b11207f589ef4e7712a1fb235cc146dd9c984b61a07788a4b1d3554b30e8f80ecbceef7b6809caad0541faecbedd7e2697665ed8f5eeb1b215d8eda0c890dd2c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/zi5opIfD/versions/y45RSDFX/happy_ghast_legacy-1.8-1.20.1-fabric.jar'
+
+[update.modrinth]
+mod-id = 'zi5opIfD'
+version = 'y45RSDFX'

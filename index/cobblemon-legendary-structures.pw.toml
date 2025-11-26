@@ -1,0 +1,16 @@
+filename = 'cobblemon-legendary-structures-2.0.jar'
+name = 'Cobblemon: Legends Untold'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge', 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '962afd28019402ae8f121cc83605c83c42cc9d90d8b34a226cea013fd6d85b577cb4085d2b9d2021ea6898accf1f5fe7a01ef6f40994c07ae79f00e2deb51dd6'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/FuRL3fNw/versions/UuLxPjAq/cobblemon-legendary-structures-2.0.jar'
+
+[update.modrinth]
+mod-id = 'FuRL3fNw'
+version = 'UuLxPjAq'

@@ -1,0 +1,16 @@
+filename = 'crafter-1.0.2-1.20.1.jar'
+name = 'Autocrafter Early'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '57af47847f15746521084759e02a3888da137511652793507fc7b70d41e05ac72d6cc7cbdf6f88d934649e37cee31f139c76219d6786fc2df449fce842ebf917'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/pAONjoSH/versions/213IPd8u/crafter-1.0.2-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'pAONjoSH'
+version = '213IPd8u'

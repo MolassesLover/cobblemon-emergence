@@ -1,0 +1,16 @@
+filename = 'molten_metals-1.20.1-0.1.4-fabric.jar'
+name = 'Create: Molten Metals'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '3c6df2db5939a1d64710d972b9abaed68a1af8cb1eaefe9167e4eedc4a28580c69eb439f2bad99e056eaee04225b1f20e07f5c0d97184df5397df6772850fc84'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/5ZuwMbpk/versions/IjyXHt7J/molten_metals-1.20.1-0.1.4-fabric.jar'
+
+[update.modrinth]
+mod-id = '5ZuwMbpk'
+version = 'IjyXHt7J'

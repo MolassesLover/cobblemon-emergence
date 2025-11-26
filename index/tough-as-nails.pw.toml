@@ -1,0 +1,16 @@
+filename = 'ToughAsNails-fabric-1.20.1-9.2.0.171.jar'
+name = 'Tough As Nails'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '7886a6a9f2e59360f59dc72886f18a7f450918a98df4d79e9900022a674908f81d1e9c582fddf1ec09c5eac1fad02605c9413275910b9cd64e6dda1d5249437d'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ge1sOdFH/versions/VaFrDMPi/ToughAsNails-fabric-1.20.1-9.2.0.171.jar'
+
+[update.modrinth]
+mod-id = 'ge1sOdFH'
+version = 'VaFrDMPi'

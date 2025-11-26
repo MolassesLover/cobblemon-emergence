@@ -1,0 +1,16 @@
+filename = 'Dungeon Now Loading-fabric-1.20.1-2.11.jar'
+name = 'Dungeon Now Loading'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '7eb23cb3c1e4f5d008422c5668c8b448bb214ea5750a6218c8fda77e3e298d796fa4ff6639cc8b4865a9dfd8d455591df2fdeec4ea065240510f232ef7f53f82'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/vZoqTqwv/versions/JlTOmyMX/Dungeon Now Loading-fabric-1.20.1-2.11.jar'
+
+[update.modrinth]
+mod-id = 'vZoqTqwv'
+version = 'JlTOmyMX'

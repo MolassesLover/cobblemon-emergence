@@ -1,0 +1,16 @@
+filename = 'Epic Dungeons-0.1.04-Fabric-1.19-1.20.4.jar'
+name = 'Epic Dungeons: A Roguelike Minecraft'
+side = 'server'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.19', '1.19.1', '1.19.2', '1.19.3', '1.19.4', '1.20', '1.20.1', '1.20.2', '1.20.3', '1.20.4' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '2ee3c6b571141e19f766da7bf00ce7eaf6e2486a22d8e30fc7053ce4b01375c3f4d7faa2a6b1d5703b1238c67519440cba5626486e6384009e1b06b596041388'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/iAwGa4r9/versions/40KkKOxS/Epic Dungeons-0.1.04-Fabric-1.19-1.20.4.jar'
+
+[update.modrinth]
+mod-id = 'iAwGa4r9'
+version = '40KkKOxS'

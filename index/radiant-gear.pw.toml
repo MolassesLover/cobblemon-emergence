@@ -1,0 +1,16 @@
+filename = 'radiantgear-fabric-2.1.6+1.20.1.jar'
+name = 'Radiant Gear'
+side = 'client'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.19.3', '1.19.4', '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '051a26d883f7d713037e34003c6b9cb4a63da3517074df0352b77c52b5b20e37270f295ca1a7a2051703007229c7169420f32c571d6b1b6d46992f2352b441c2'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/AtT9wm5O/versions/2u5N40JW/radiantgear-fabric-2.1.6%2B1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'AtT9wm5O'
+version = '2u5N40JW'

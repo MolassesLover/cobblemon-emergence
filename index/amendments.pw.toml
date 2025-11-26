@@ -1,0 +1,16 @@
+filename = 'amendments-1.20-2.2.3-fabric.jar'
+name = 'Amendments'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '71e827688d511952d5911bf31ba35d1aee1eea572ee4178fd0e3b34e2875e679547f0c665d97e91190364545be4ccbccc99b2b44732760be017ba6a0567cc833'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/6iTJugQR/versions/Uzal3kfq/amendments-1.20-2.2.3-fabric.jar'
+
+[update.modrinth]
+mod-id = '6iTJugQR'
+version = 'Uzal3kfq'

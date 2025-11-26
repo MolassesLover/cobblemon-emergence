@@ -1,0 +1,16 @@
+filename = 'HOHOHO! 1.1.jar'
+name = 'HOHOHO!'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '982b9b4e3118521ee1da4fd610ff3c688fc55e49bef3ef33f7a988f89766027efa537115e696ee9287246869a03cea14266810ff4aec579d7d1500f238dc1081'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/yOy0Df5n/versions/QEXzoLNW/HOHOHO%21 1.1.jar'
+
+[update.modrinth]
+mod-id = 'yOy0Df5n'
+version = 'QEXzoLNW'

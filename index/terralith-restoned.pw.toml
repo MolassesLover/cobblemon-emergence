@@ -1,0 +1,33 @@
+filename = 'Terralith_ReStoned_v1.2.jar'
+name = 'Terralith ReStoned'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge', 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [
+    '1.20',
+    '1.20.1',
+    '1.20.2',
+    '1.20.3',
+    '1.20.4',
+    '1.20.5',
+    '1.20.6',
+    '1.21',
+    '1.21.1',
+    '1.21.2',
+    '1.21.3',
+    '1.21.4',
+    '1.21.5',
+    '1.21.6',
+    '1.21.7',
+    '1.21.8'
+]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '4005e9569154cde983fe1d807961402492e26a69afac6a550c9760f0126b5a968bfbe6b489a1e85ffc66f512e6cf90627be50315a6785c96471df0473337f637'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/oTQsXi8U/versions/hcQbM6ry/Terralith_ReStoned_v1.2.jar'
+
+[update.modrinth]
+mod-id = 'oTQsXi8U'
+version = 'hcQbM6ry'

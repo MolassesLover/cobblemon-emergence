@@ -1,0 +1,16 @@
+filename = 'desert-dungeon-1.0.0.jar'
+name = 'Desert Dungeon - DungeonZ addon'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '25905e5333ad9aeb379cfc26ccc1ec28d959e373345c0a7e3f619e8b449eb9af14d1b6130a70e173d3d054a1a9590a826ec89611829e20d676701ba393c00d3b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/zun2vT3k/versions/dGOSSdyX/desert-dungeon-1.0.0.jar'
+
+[update.modrinth]
+mod-id = 'zun2vT3k'
+version = 'dGOSSdyX'

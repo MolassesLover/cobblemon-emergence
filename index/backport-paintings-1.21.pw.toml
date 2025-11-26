@@ -1,0 +1,16 @@
+filename = "Leon's Backport Paintings fabric 1.20.1.jar"
+name = 'Backport Paintings 1.21'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '1576efae5859aa5053e44309b3152675a833d3e2043aa6897125f4f259ed71454e3b650b5973850a2b074787730708acac9ab577a02481794477244ab62826ea'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/P86fl1mK/versions/A7BWLIpO/Leon%27s Backport Paintings fabric 1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'P86fl1mK'
+version = 'A7BWLIpO'

@@ -1,0 +1,16 @@
+filename = 'guardianexpansion-1.20.1-1.0.1.jar'
+name = 'Guardian Expansion'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '3da7d1ab2a5440eb401f323f43ba817aa6e092cf64584ba91a397ca248474b64c9e33c0a46774b331c5f9386c05f553b42a28a2ec61acb4bf306d2e456092154'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/f1LAk88w/versions/1uCuLjPv/guardianexpansion-1.20.1-1.0.1.jar'
+
+[update.modrinth]
+mod-id = 'f1LAk88w'
+version = '1uCuLjPv'

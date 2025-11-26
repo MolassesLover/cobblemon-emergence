@@ -1,0 +1,16 @@
+filename = 'playerxp-fabric-1.0.1+1.20.1.jar'
+name = 'Cobblemon: PlayerXP'
+side = 'server'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '6f2d454506bbe9e4d592bf3256c6f6857e632befecc7999984909dc73e8bc69366162ad655912bfee37a0807c605b2fc67e1dc1d0bd5917e236ef4f6be856d26'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/zlrbPCvu/versions/8rp3J3Dr/playerxp-fabric-1.0.1%2B1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'zlrbPCvu'
+version = '8rp3J3Dr'

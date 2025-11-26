@@ -1,0 +1,16 @@
+filename = '[fabric]ctov-3.4.14.jar'
+name = "ChoiceTheorem's Overhauled Village"
+side = 'server'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'd5717ee8a7984cdfd3d839120fc62add33eb7ca755edc4ee828007e32fd8a44c7b91432a2df120dc5feff89802ce0dc7367dbe6f9441d214cb0ba6e22d557975'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/fgmhI8kH/versions/xaqkr8Ey/%5Bfabric%5Dctov-3.4.14.jar'
+
+[update.modrinth]
+mod-id = 'fgmhI8kH'
+version = 'xaqkr8Ey'

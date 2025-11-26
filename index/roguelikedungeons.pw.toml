@@ -1,0 +1,16 @@
+filename = 'RoguelikeDungeons-2.1.0-1.20.1-fabric.jar'
+name = 'Roguelike Dungeons'
+side = 'server'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '13cd2b9c39cdb3badb29c5269f8e565c407d3545789f3afbee689dbc9a506e50bd14ddbce949cb32a45b24a7812a14015751044991e0511939a2f2eb0abc422c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/MFpvbNGE/versions/3cXBjCfG/RoguelikeDungeons-2.1.0-1.20.1-fabric.jar'
+
+[update.modrinth]
+mod-id = 'MFpvbNGE'
+version = '3cXBjCfG'

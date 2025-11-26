@@ -1,0 +1,16 @@
+filename = 'expandeddelight-0.3.2.jar'
+name = 'Expanded Delight'
+side = 'both'
+x-prismlauncher-loaders = [ 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = 'bee505d4f291f779ac62000476489d26eaa5d649f887223a2dc37ca03378e7b076cdfa5ba7c895d6866cabdea9a362a96a4e56f6d964243b892fde194a988b4b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/e9V6wFcR/versions/4KEfJPHI/expandeddelight-0.3.2.jar'
+
+[update.modrinth]
+mod-id = 'e9V6wFcR'
+version = '4KEfJPHI'

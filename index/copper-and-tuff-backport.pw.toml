@@ -1,0 +1,16 @@
+filename = 'CopperandTuffBackport-1.3.4.jar'
+name = 'Copper and Tuff Backport'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.2', '1.20.3', '1.20.4', '1.20.5', '1.20.6' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '7adf864c8ca7ce02920faa47a27a5e79f6d8e6001a145dbba9d037cab7dcb43ab4d29a20dbc8c29a53fc91f2826338132605f3350d48879a3069e19c60aef605'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Cl2pHhNx/versions/JBBIvhH8/CopperandTuffBackport-1.3.4.jar'
+
+[update.modrinth]
+mod-id = 'Cl2pHhNx'
+version = 'JBBIvhH8'
