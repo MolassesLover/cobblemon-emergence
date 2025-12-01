@@ -28,6 +28,15 @@
     },
     {
         "authors": [
+            "QuackImpala7321"
+        ],
+        "filename": "crafter-1.0.2-1.20.1.jar",
+        "name": "Autocrafter Early",
+        "url": "https://modrinth.com/mod/pAONjoSH",
+        "version": "1.0.2-1.20.1"
+    },
+    {
+        "authors": [
             "BlayTheNinth"
         ],
         "filename": "balm-fabric-1.20.1-7.3.37.jar",
@@ -74,6 +83,15 @@
     },
     {
         "authors": [
+            "TimInc aka Timothy Metcalfe"
+        ],
+        "filename": "cobblemon-capturexp-1.5-fabric-1.0.1.jar",
+        "name": "Cobblemon Capture EXP",
+        "url": "https://modrinth.com/mod/LBl4Qguc",
+        "version": "1.5-fabric-1.0.1"
+    },
+    {
+        "authors": [
             "rufia",
             "LyquidQrystal"
         ],
@@ -93,6 +111,15 @@
     },
     {
         "authors": [
+            "TSFlareon"
+        ],
+        "filename": "cobblemon-legendary-structures-2.0.jar",
+        "name": "Cobblemon: Legendary Structures",
+        "url": "https://modrinth.com/mod/FuRL3fNw",
+        "version": "2.0"
+    },
+    {
+        "authors": [
             "Rick South"
         ],
         "filename": "collective-1.20.1-8.13.jar",
@@ -108,6 +135,25 @@
         "name": "Controlling For Fabric",
         "url": "https://modrinth.com/mod/xv94TkTM",
         "version": "12.0.2"
+    },
+    {
+        "authors": [
+            "Xanthian"
+        ],
+        "filename": "CopperandTuffBackport-1.3.4.jar",
+        "name": "CopperandTuffBackport",
+        "url": "https://modrinth.com/mod/Cl2pHhNx",
+        "version": "1.3.4"
+    },
+    {
+        "authors": [
+            "Corgi Taco",
+            "Joseph T. McQuigg (JT122406)"
+        ],
+        "filename": "Corgilib-Fabric-1.20.1-4.0.3.4.jar",
+        "name": "CorgiLib",
+        "url": "https://modrinth.com/mod/ziOp6EO8",
+        "version": "4.0.3.4"
     },
     {
         "authors": [
@@ -380,6 +426,15 @@
     },
     {
         "authors": [
+            "mezz"
+        ],
+        "filename": "jei-1.20.1-fabric-15.20.0.127.jar",
+        "name": "Just Enough Items",
+        "url": "https://modrinth.com/mod/u6dRKJwZ",
+        "version": "15.20.0.127"
+    },
+    {
+        "authors": [
             "LambdAurora"
         ],
         "filename": "lambdynamiclights-4.4.0+1.20.1.jar",
@@ -415,6 +470,16 @@
         "name": "Memory Leak Fix",
         "url": "https://modrinth.com/mod/NRjRiSSD",
         "version": "1.1.5"
+    },
+    {
+        "authors": [
+            "LambdAurora",
+            "Motschen"
+        ],
+        "filename": "midnightcontrols-1.9.4+1.20.jar",
+        "name": "MidnightControls",
+        "url": "https://modrinth.com/mod/bXX9h73M",
+        "version": "1.9.4+1.20"
     },
     {
         "authors": [
@@ -484,6 +549,15 @@
     },
     {
         "authors": [
+            "ItsBlackGear"
+        ],
+        "filename": "Platform-fabric-1.20.1-1.2.11.3.jar",
+        "name": "Platform",
+        "url": "https://modrinth.com/mod/i6fiqm5y",
+        "version": "1.2.11.3"
+    },
+    {
+        "authors": [
             "Greymerk"
         ],
         "filename": "RoguelikeDungeons-2.1.0-1.20.1-fabric.jar",
@@ -547,6 +621,12 @@
         "version": "9.2.0.171"
     },
     {
+        "filename": "totw_modded-fabric-1.20.1-1.0.5.jar",
+        "name": "Towers of the Wild Modded",
+        "url": "https://modrinth.com/mod/54eqfZSC",
+        "version": "q3oqxRHM"
+    },
+    {
         "authors": [
             "Aurelj"
         ],
@@ -563,6 +643,26 @@
         "name": "VLib",
         "url": "https://modrinth.com/mod/V1UmcEMX",
         "version": "1.20.1-0.0.15-alpha"
+    },
+    {
+        "authors": [
+            "ewoudje",
+            "Tri0de",
+            "Rubydesic"
+        ],
+        "filename": "eureka-1201-1.5.2-beta.3.jar",
+        "name": "VS Eureka Mod",
+        "url": "https://modrinth.com/mod/EO8aSHxh",
+        "version": "1.5.2-beta.3"
+    },
+    {
+        "authors": [
+            "MJ_83"
+        ],
+        "filename": "vsegamepadlite-1.0.0.lt-1.20.1-Fabric.jar",
+        "name": "VSE Gamepad lite",
+        "url": "https://modrinth.com/mod/o5w41Sp3",
+        "version": "1.0.0.lt-1.20.1-Fabric"
     },
     {
         "authors": [
@@ -605,6 +705,15 @@
     },
     {
         "authors": [
+            "BlackGear"
+        ],
+        "filename": "vanillabackport-fabric-1.20.1-1.1.5.1.jar",
+        "name": "VanillaBackport",
+        "url": "https://modrinth.com/mod/6xwxDTgf",
+        "version": "1.1.5.1"
+    },
+    {
+        "authors": [
             "BlayTheNinth"
         ],
         "filename": "waystones-fabric-1.20.1-14.1.17.jar",
@@ -613,8 +722,21 @@
         "version": "14.1.17"
     },
     {
-        "filename": "totw_modded-fabric-1.20.1-1.0.5.jar",
-        "name": "totw_modded-fabric-1.20.1-1.0.5"
+        "authors": [
+            "xaero96"
+        ],
+        "filename": "Xaeros_Minimap_25.2.10_Fabric_1.20.jar",
+        "name": "Xaero's Minimap",
+        "url": "https://modrinth.com/mod/1bokaNcj",
+        "version": "25.2.10"
+    },
+    {
+        "authors": [
+            "xaero96"
+        ],
+        "filename": "XaerosWorldMap_1.39.12_Fabric_1.20.jar",
+        "name": "Xaero's World Map",
+        "url": "https://modrinth.com/mod/NcUtCpym",
+        "version": "1.39.12"
     }
 ]
-

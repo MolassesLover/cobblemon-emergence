@@ -1,0 +1,16 @@
+filename = 'cobblemon-capturexp-1.5-fabric-1.0.1.jar'
+name = 'Cobblemon Capture XP'
+side = 'server'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '142230ba290e83b97ae347165b1cb52af0b61814dfe949239e02c81d23ac95599dbf5e424fd5e68a98c56f4232ca5ad78d909ec137501afdf9e4acb5e4b832b8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/LBl4Qguc/versions/9nPOeA1v/cobblemon-capturexp-1.5-fabric-1.0.1.jar'
+
+[update.modrinth]
+mod-id = 'LBl4Qguc'
+version = '9nPOeA1v'
