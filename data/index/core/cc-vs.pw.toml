@@ -1,0 +1,16 @@
+filename = 'cc_vs-1.20.1-fabric-0.5.1.jar'
+name = 'CC: VS'
+side = 'server'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '28245854080111db6606f78df83a01f2972d974b511e99128e20f1e95fa58b1873a489cb7cf97c473ff41fc0f08ac34103df65495f15f80f028b259fccd73cbb'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/bvgy8HrZ/versions/ZlSITbgh/cc_vs-1.20.1-fabric-0.5.1.jar'
+
+[update.modrinth]
+mod-id = 'bvgy8HrZ'
+version = 'ZlSITbgh'

@@ -1,0 +1,16 @@
+filename = 'Drip Sounds-0.5.2+1.20.4-Fabric.jar'
+name = 'Drip Sounds'
+side = 'client'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1', '1.20.2', '1.20.3', '1.20.4' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '687ad64f3d867817fd64289556042c4c40cf2d58373a49d10e252f1e1777270249fe93addf3dc7236dccb13dc535a8c9d83d64bb4eb62a7bd9feb78be63c5e17'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/T8MMXTpr/versions/ypXuGxlW/Drip Sounds-0.5.2%2B1.20.4-Fabric.jar'
+
+[update.modrinth]
+mod-id = 'T8MMXTpr'
+version = 'ypXuGxlW'

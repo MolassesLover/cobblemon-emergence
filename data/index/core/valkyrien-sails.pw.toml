@@ -1,0 +1,16 @@
+filename = 'vs_sails-1.20.1-0.2.3-fabric.jar'
+name = 'Valkyrien Sails'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.2', '1.20.3', '1.20.4', '1.20.5', '1.20.6' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = 'fe337a010f1bf22c5b419af29b8efcebabd946b65a4537734b1e6223b23f55ede6a689deb54dab97e8023b45528c419ce5e42d8499ec55cfe4923047f8a31db1'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/esFadCt9/versions/5kDUga8P/vs_sails-1.20.1-0.2.3-fabric.jar'
+
+[update.modrinth]
+mod-id = 'esFadCt9'
+version = '5kDUga8P'

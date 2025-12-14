@@ -1,0 +1,16 @@
+filename = 'gravestones-1.2.6+1.20.1+A.jar'
+name = 'Gravestones'
+side = 'both'
+x-prismlauncher-loaders = [ 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'c01da6efa10a2bdecde479513e3ee0da099ac771d6eb2a851047f2b7e1708c923f50202107913c5f3ee256a990d9c89286fa91532c968a53b5e1d7badcc17a01'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Heh3BbSv/versions/Ilbc0enh/gravestones-1.2.6%2B1.20.1%2BA.jar'
+
+[update.modrinth]
+mod-id = 'Heh3BbSv'
+version = 'Ilbc0enh'
