@@ -5,6 +5,7 @@ The command-line for the Cobblemon Emergence launcher. This file serves as its
 entrypoint, and should not be imported for use as a library.
 """
 
+import argparse
 import os
 import tomllib
 import sys
@@ -113,9 +114,10 @@ def temp_environment_setup(temp_directory: str):
 
 
 def mod_dictionary_list_append(dictionary_list: list[str], mod_dictionary: dict):
-    dictionary_list.append(mod['filename'])
+    dictionary_list.append(mod["filename"])
 
     return dictionary_list
+
 
 if __name__ == "__main__":
     # Get the current script directory in order to obtain the index files.
@@ -133,23 +135,54 @@ if __name__ == "__main__":
     TEMP_DIRECTORY_WIN32 = path_to_posix(f"{Path.home()}/AppData/Local/Temp")
     TEMP_DIRECTORY_UNIX = path_to_posix("/var/tmp")  # Hopefully compatible enough.
 
-    mods: dict = {
-        "client": [],
-        "core": [],
-        "server": []
-    }
+    mods_local_current: list = []
+    installation_target_directories: list = []
+
+    mods: dict = {"client": [], "core": [], "server": []}
+
+    argument_parser = argparse.ArgumentParser()
+
+    argument_parser.add_argument("-c", "--client", help="The client mod directory.")
+    argument_parser.add_argument("-s", "--server", help="The server mod directory.")
+
+    argument_group_actions = argument_parser.add_mutually_exclusive_group(required=True)
+
+    argument_group_actions.add_argument(
+        "-u", "--update", help="Update mod files; download new files, delete old ones.", action="store_true"
+    )
+    argument_group_actions.add_argument(
+        "-x", "--check", help="Check for updates to the modpack.", action="store_true"
+    )
+
+    arguments = argument_parser.parse_args()
+
+    if not arguments.client and not arguments.server:
+        argument_parser.print_help()
+        exit_error("At least one of either the client or server mod directory must be specified.")
+
+    if arguments.client:
+        installation_target_directories.append(arguments.client)
+    if arguments.server:
+        installation_target_directories.append(arguments.server)
+
+    for installation_target in installation_target_directories:
+        for local_mod_path in os.listdir(installation_target):
+            if os.path.isfile(f"{installation_target}/{local_mod_path}"):
+                mods_local_current.append(local_mod_path)
 
     # To do: Check if the temp directory has appropriate read/write mode.
 
-    with open(MOD_LIST_PATH, 'r', encoding='utf-8') as mod_list_file:
+    with open(MOD_LIST_PATH, "r", encoding="utf-8") as mod_list_file:
         mod_list_string = mod_list_file.read()
         mod_list_dictionary = json.loads(mod_list_string)
 
         for mod_category in mod_list_dictionary:
             print(f"\n[{Colors.YELLOW}{mod_category.upper()}{Colors.RESET}]")
-            
+
             for mod in mod_list_dictionary[mod_category]:
-                log_message_info(f"Found mod \'{Colors.BLUE}{mod['name']}{Colors.RESET}\' in list.")
+                log_message_info(
+                    f"Found mod '{Colors.BLUE}{mod['name']}{Colors.RESET}' in latest list."
+                )
 
                 match mod_category:
                     case "client":
@@ -160,7 +193,7 @@ if __name__ == "__main__":
                         mod_dictionary_list_append(mods["server"], mod)
                     case _:
                         exit_error(f"Found unsupported mod category {mod_category}")
-    
+
     # Open the config file, get the modpack size.
     with open(CONFIG_PATH, "r", encoding="utf-8") as config_file:
         config_file_string = config_file.read()
@@ -201,7 +234,9 @@ if __name__ == "__main__":
     if index_subdirectories:
         for index_subdirectory in index_subdirectories:
             for index_file in os.listdir(f"{INDEX_DIRECTORY}/{index_subdirectory}"):
-                index_file_path = path_to_posix(f"{INDEX_DIRECTORY}/{index_subdirectory}/{index_file}")
+                index_file_path = path_to_posix(
+                    f"{INDEX_DIRECTORY}/{index_subdirectory}/{index_file}"
+                )
 
                 log_message_info(
                     f"Reading: `{Colors.GREEN}{os.path.basename(index_file_path)}{Colors.RESET}`"

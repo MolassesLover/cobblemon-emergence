@@ -1119,14 +1119,6 @@
     ],
 
     "server": [
-        {
-            "authors": [
-                "embeddedt"
-            ],
-            "filename": "modernfix-fabric-5.25.2+mc1.20.1.jar",
-            "name": "ModernFix",
-            "url": "https://modrinth.com/mod/nmDcB62a",
-            "version": "5.25.2+mc1.20.1"
-        }
+
     ]
 }
