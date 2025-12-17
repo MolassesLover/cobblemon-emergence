@@ -1,0 +1,16 @@
+filename = 'vsegamepadlite-1.0.0.lt-1.20.1-Fabric.jar'
+name = 'VSE Gamepad Lite'
+side = 'client'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '09f1129fa683f0d18ab6e9c0dba640c42d33fb71271355460c84ba0629a0ee1edfbdd6549c44c9a148fd6d9154ade7b04ed4a57acf2132990b79d922cf91fdbe'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/o5w41Sp3/versions/2ux7gbNu/vsegamepadlite-1.0.0.lt-1.20.1-Fabric.jar'
+
+[update.modrinth]
+mod-id = 'o5w41Sp3'
+version = '2ux7gbNu'
