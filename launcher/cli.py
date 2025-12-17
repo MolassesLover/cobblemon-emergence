@@ -28,7 +28,6 @@ class Colors:
     GREEN = "\033[0;32m"
     BLUE = "\033[0;34m"
 
-
 def log_message_info(message_string):
     """
     One of the logging functions. Prints a formatted message.
@@ -177,22 +176,25 @@ if __name__ == "__main__":
         mod_list_dictionary = json.loads(mod_list_string)
 
         for mod_category in mod_list_dictionary:
-            print(f"\n[{Colors.YELLOW}{mod_category.upper()}{Colors.RESET}]")
+            if mod_list_dictionary[mod_category]:
+                print(f"\n[{Colors.YELLOW}{mod_category.upper()}{Colors.RESET}]")
 
-            for mod in mod_list_dictionary[mod_category]:
-                log_message_info(
-                    f"Found mod '{Colors.BLUE}{mod['name']}{Colors.RESET}' in latest list."
-                )
+                for mod in mod_list_dictionary[mod_category]:
+                    log_message_info(
+                        f"Found mod '{Colors.BLUE}{mod['name']}{Colors.RESET}' in latest list."
+                    )
 
-                match mod_category:
-                    case "client":
-                        mod_dictionary_list_append(mods["client"], mod)
-                    case "core":
-                        mod_dictionary_list_append(mods["core"], mod)
-                    case "server":
-                        mod_dictionary_list_append(mods["server"], mod)
-                    case _:
-                        exit_error(f"Found unsupported mod category {mod_category}")
+                    match mod_category:
+                        case "client":
+                            mod_dictionary_list_append(mods["client"], mod)
+                        case "core":
+                            mod_dictionary_list_append(mods["core"], mod)
+                        case "server":
+                            mod_dictionary_list_append(mods["server"], mod)
+                        case _:
+                            exit_error(f"Found unsupported mod category {mod_category}")
+
+    print()
 
     # Open the config file, get the modpack size.
     with open(CONFIG_PATH, "r", encoding="utf-8") as config_file:
@@ -213,8 +215,6 @@ if __name__ == "__main__":
             f"Could not find Modrinth index file directory: `{Colors.YELLOW}{INDEX_DIRECTORY}{Colors.RESET}`"
         )
 
-    print("\n:: Read mod list.")
-
     # Make Windows use the right temp directory, and have a few sanity checks to ensure compatibility.
     match sys.platform:
         case "win32":
@@ -230,30 +230,26 @@ if __name__ == "__main__":
                 "Unsupported platform, can't create the temp directory for cache."
             )
 
-    # Iterate through all the index files, read their data into a dictionary, and update the modpack.
-    if index_subdirectories:
-        for index_subdirectory in index_subdirectories:
-            for index_file in os.listdir(f"{INDEX_DIRECTORY}/{index_subdirectory}"):
-                index_file_path = path_to_posix(
-                    f"{INDEX_DIRECTORY}/{index_subdirectory}/{index_file}"
-                )
+    mods_latest: list = []
 
-                log_message_info(
-                    f"Reading: `{Colors.GREEN}{os.path.basename(index_file_path)}{Colors.RESET}`"
-                )
-
-                with open(index_file_path, "r", encoding="utf-8") as index_file_data:
-                    index_file_string = index_file_data.read()
-
-                    index_file_dictionary = tomllib.loads(index_file_string)
-
-                    print(
-                        f":: Checking: '{Colors.BLUE}{index_file_dictionary['name']}{Colors.RESET}'"
-                    )
-
-                    # To do:
-                    # - Check if the modpack has changed since the last update.
-                    # - Download missing files.
-                    # - Remove old files.
+    if arguments.client:
+        mods_latest: list = mod_list_dictionary["core"] + mod_list_dictionary["client"]
+    elif arguments.server:
+        mods_latest: list = mod_list_dictionary["core"] + mod_list_dictionary["server"]
     else:
-        exit_error("No index files listed. Is the index directory empty?")
+        exit_error("Unknown mod installation target.")
+    
+    for mod in mods_latest:
+        #if not mod["filename"] in mods_local_current:
+            log_message_info(f"[ {Colors.YELLOW}⧗{Colors.RESET} ] Installing mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}'")
+
+            with open(f"{INDEX_DIRECTORY}/{mod['index']}", 'r', encoding="utf-8") as index_file_data:
+                index_file_string = index_file_data.read()
+
+                index_file_dictionary = tomllib.loads(index_file_string)
+
+                print(index_file_dictionary["download"]["url"])
+
+
+        #else:
+        #   log_message_info(f"[ {Colors.GREEN}✔{Colors.RESET} ] Mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}' already installed and up to date.")

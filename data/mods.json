@@ -1,4 +1,4 @@
-{ 
+{
     "core": [
         {
             "authors": [
@@ -7,7 +7,8 @@
             "filename": "amendments-1.20-2.2.3-fabric.jar",
             "name": "Amendments",
             "url": "https://modrinth.com/mod/6iTJugQR",
-            "version": "1.20-2.2.3"
+            "version": "1.20-2.2.3",
+            "index": "core/amendments.pw.toml"
         },
         {
             "authors": [
@@ -16,7 +17,8 @@
             "filename": "architectury-9.2.14-fabric.jar",
             "name": "Architectury",
             "url": "https://modrinth.com/mod/lhGA9TYQ",
-            "version": "9.2.14"
+            "version": "9.2.14",
+            "index": "core/architectury-api.pw.toml"
         },
         {
             "authors": [
@@ -25,7 +27,8 @@
             "filename": "AttributeFix-Fabric-1.20.1-21.0.4.jar",
             "name": "AttributeFix",
             "url": "https://modrinth.com/mod/lOOpEntO",
-            "version": "21.0.4"
+            "version": "21.0.4",
+            "index": "core/attributefix.pw.toml"
         },
         {
             "authors": [
@@ -34,7 +37,8 @@
             "filename": "crafter-1.0.2-1.20.1.jar",
             "name": "Autocrafter Early",
             "url": "https://modrinth.com/mod/pAONjoSH",
-            "version": "1.0.2-1.20.1"
+            "version": "1.0.2-1.20.1",
+            "index": "core/autocrafter-early.pw.toml"
         },
         {
             "authors": [
@@ -43,7 +47,8 @@
             "filename": "balm-fabric-1.20.1-7.3.37.jar",
             "name": "Balm",
             "url": "https://modrinth.com/mod/MBAkmtvl",
-            "version": "7.3.37"
+            "version": "7.3.37",
+            "index": "core/balm.pw.toml"
         },
         {
             "authors": [
@@ -52,7 +57,8 @@
             "filename": "bundle-backportish-1.0.1+mc1.20.1.jar",
             "name": "Bundle Backport-ish",
             "url": "https://modrinth.com/mod/91hOfmS6",
-            "version": "1.0.1+mc1.20.1"
+            "version": "1.0.1+mc1.20.1",
+            "index": "core/bundle-backportish.pw.toml"
         },
         {
             "authors": [
@@ -63,7 +69,8 @@
             "filename": "cc-tweaked-1.20.1-fabric-1.116.2.jar",
             "name": "CC: Tweaked",
             "url": "https://modrinth.com/mod/gu7yAYhd",
-            "version": "1.116.2"
+            "version": "1.116.2",
+            "index": "core/cc-tweaked.pw.toml"
         },
         {
             "authors": [
@@ -72,7 +79,8 @@
             "filename": "cc_vs-1.20.1-fabric-0.5.1.jar",
             "name": "CC: VS",
             "url": "https://modrinth.com/mod/bvgy8HrZ",
-            "version": "1.20.1-fabric-0.5.1"
+            "version": "1.20.1-fabric-0.5.1",
+            "index": "core/cc-vs.pw.toml"
         },
         {
             "authors": [
@@ -83,7 +91,8 @@
             "filename": "carryon-fabric-1.20.1-2.1.2.7.jar",
             "name": "Carry On",
             "url": "https://modrinth.com/mod/joEfVgkn",
-            "version": "2.1.2.7"
+            "version": "2.1.2.7",
+            "index": "core/carry-on.pw.toml"
         },
         {
             "authors": [
@@ -92,7 +101,8 @@
             "filename": "CarryOnVSCompat-Fabric-1.20.1-1.0.0.jar",
             "name": "Carry On + Valkyrien Skies Compat",
             "url": "https://modrinth.com/mod/VdZ1CoT5",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "index": "core/carryon-vs-compat.pw.toml"
         },
         {
             "authors": [
@@ -101,7 +111,8 @@
             "filename": "Chunky-1.3.146.jar",
             "name": "Chunky",
             "url": "https://modrinth.com/mod/fALzjamp",
-            "version": "1.3.146"
+            "version": "1.3.146",
+            "index": "core/chunky.pw.toml"
         },
         {
             "authors": [
@@ -110,7 +121,8 @@
             "filename": "cloth-config-11.1.136-fabric.jar",
             "name": "Cloth Config v11",
             "url": "https://modrinth.com/mod/9s6osm5g",
-            "version": "11.1.136"
+            "version": "11.1.136",
+            "index": "core/cloth-config.pw.toml"
         },
         {
             "authors": [
@@ -119,7 +131,8 @@
             "filename": "Cobblemon-fabric-1.5.2+1.20.1.jar",
             "name": "Cobblemon",
             "url": "https://modrinth.com/mod/MdwFAVRL",
-            "version": "1.5.2+1.20.1"
+            "version": "1.5.2+1.20.1",
+            "index": "core/cobblemon.pw.toml"
         },
         {
             "authors": [
@@ -128,7 +141,8 @@
             "filename": "cobblemon-capturexp-1.5-fabric-1.0.1.jar",
             "name": "Cobblemon Capture EXP",
             "url": "https://modrinth.com/mod/LBl4Qguc",
-            "version": "1.5-fabric-1.0.1"
+            "version": "1.5-fabric-1.0.1",
+            "index": "core/cobblemon-capture-xp.pw.toml"
         },
         {
             "authors": [
@@ -138,7 +152,8 @@
             "filename": "fightorflight-fabric-0.6.2.jar",
             "name": "Cobblemon Fight or Flight Fabric",
             "url": "https://modrinth.com/mod/cTdIg5HZ",
-            "version": "0.6.2"
+            "version": "0.6.2",
+            "index": "core/cobblemon-fight-or-flight-reborn.pw.toml"
         },
         {
             "authors": [
@@ -147,7 +162,8 @@
             "filename": "cobblemonintegrations-1.20.1-1.0.7.jar",
             "name": "Cobblemon Integrations",
             "url": "https://modrinth.com/mod/NPCfuUI4",
-            "version": "1.0.7"
+            "version": "1.0.7",
+            "index": "core/cobblemon-integrations.pw.toml"
         },
         {
             "authors": [
@@ -156,7 +172,8 @@
             "filename": "cobblemon-legendary-structures-2.0.jar",
             "name": "Cobblemon: Legendary Structures",
             "url": "https://modrinth.com/mod/FuRL3fNw",
-            "version": "2.0"
+            "version": "2.0",
+            "index": "core/cobblemon-legendary-structures.pw.toml"
         },
         {
             "authors": [
@@ -165,7 +182,8 @@
             "filename": "collective-1.20.1-8.13.jar",
             "name": "Collective",
             "url": "https://modrinth.com/mod/e0M1UDsY",
-            "version": "8.13"
+            "version": "8.13",
+            "index": "core/collective.pw.toml"
         },
         {
             "authors": [
@@ -174,7 +192,8 @@
             "filename": "CopperandTuffBackport-1.3.4.jar",
             "name": "CopperandTuffBackport",
             "url": "https://modrinth.com/mod/Cl2pHhNx",
-            "version": "1.3.4"
+            "version": "1.3.4",
+            "index": "core/copper-and-tuff-backport.pw.toml"
         },
         {
             "authors": [
@@ -184,7 +203,8 @@
             "filename": "Corgilib-Fabric-1.20.1-4.0.3.4.jar",
             "name": "CorgiLib",
             "url": "https://modrinth.com/mod/ziOp6EO8",
-            "version": "4.0.3.4"
+            "version": "4.0.3.4",
+            "index": "core/corgilib.pw.toml"
         },
         {
             "authors": [
@@ -194,7 +214,8 @@
             "filename": "create-fabric-6.0.8.0+build.1734-mc1.20.1.jar",
             "name": "Create",
             "url": "https://modrinth.com/mod/Xbc0uyRg",
-            "version": "6.0.8.0+build.1734-mc1.20.1"
+            "version": "6.0.8.0+build.1734-mc1.20.1",
+            "index": "core/create-fabric.pw.toml"
         },
         {
             "authors": [
@@ -204,7 +225,8 @@
             "filename": "Create-Cobblemon-Fabric-v0.5.02HOTFIX.jar",
             "name": "Create: Cobblemon Industrialized",
             "url": "https://modrinth.com/mod/tOucrGJ4",
-            "version": "0.5-1.20.1"
+            "version": "0.5-1.20.1",
+            "index": "core/create-cobblemon-industrialized.pw.toml"
         },
         {
             "authors": [
@@ -214,7 +236,8 @@
             "filename": "CreativeCore_FABRIC_v2.12.34_mc1.20.1.jar",
             "name": "CreativeCore",
             "url": "https://modrinth.com/mod/OsZiaDHq",
-            "version": "2.12.34"
+            "version": "2.12.34",
+            "index": "core/creativecore.pw.toml"
         },
         {
             "authors": [
@@ -223,7 +246,8 @@
             "filename": "deathbackup-1.20.1-3.5.jar",
             "name": "Death Backup",
             "url": "https://modrinth.com/mod/Ot5JFxuv",
-            "version": "3.5"
+            "version": "3.5",
+            "index": "core/death-backup.pw.toml"
         },
         {
             "authors": [
@@ -232,7 +256,8 @@
             "filename": "Debugify-1.20.1+2.0.jar",
             "name": "Debugify",
             "url": "https://modrinth.com/mod/QwxR6Gcd",
-            "version": "1.20.1+2.0"
+            "version": "1.20.1+2.0",
+            "index": "core/debugify.pw.toml"
         },
         {
             "authors": [
@@ -242,13 +267,15 @@
             "filename": "desert-dungeon-1.0.0.jar",
             "name": "Desert Dungeon",
             "url": "https://modrinth.com/mod/zun2vT3k",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "index": "core/desert-dungeon-dungeonz-addon.pw.toml"
         },
         {
             "filename": "DistantHorizons-2.3.6-b-1.20.1-fabric-forge.jar",
             "name": "Distant Horizons",
             "url": "https://modrinth.com/mod/uCdwusMi",
-            "version": "2.3.6-b"
+            "version": "2.3.6-b",
+            "index": "core/distanthorizons.pw.toml"
         },
         {
             "authors": [
@@ -257,7 +284,8 @@
             "filename": "dash-2.0.0-1.20.1.jar",
             "name": "Double-Tap Dash",
             "url": "https://modrinth.com/mod/nOA6YVAg",
-            "version": "2.0.0-1.20.1"
+            "version": "2.0.0-1.20.1",
+            "index": "core/double-tap-dash.pw.toml"
         },
         {
             "authors": [
@@ -266,7 +294,8 @@
             "filename": "Dungeon Now Loading-fabric-1.20.1-2.11.jar",
             "name": "Dungeon Now Loading",
             "url": "https://modrinth.com/mod/vZoqTqwv",
-            "version": "2.11"
+            "version": "2.11",
+            "index": "core/dungeon-now-loading.pw.toml"
         },
         {
             "authors": [
@@ -276,7 +305,8 @@
             "filename": "dungeonz-1.0.6.jar",
             "name": "DungeonZ",
             "url": "https://modrinth.com/mod/11jwniuC",
-            "version": "1.0.6"
+            "version": "1.0.6",
+            "index": "core/dungeonz.pw.toml"
         },
         {
             "authors": [
@@ -286,7 +316,8 @@
             "filename": "dungeons-and-taverns-3.0.3.f.jar",
             "name": "Dungeons and Taverns",
             "url": "https://modrinth.com/mod/tpehi7ww",
-            "version": "3.0.3.f"
+            "version": "3.0.3.f",
+            "index": "core/dungeons-and-taverns.pw.toml"
         },
         {
             "authors": [
@@ -295,7 +326,8 @@
             "filename": "dungeons-and-taverns-ancient-city-overhaul-1.jar",
             "name": "Dungeons and Taverns Ancient City Overhaul",
             "url": "https://modrinth.com/mod/DNuNq5bb",
-            "version": "1"
+            "version": "1",
+            "index": "core/dungeons-and-taverns-ancient-city-overhaul.pw.toml"
         },
         {
             "authors": [
@@ -304,7 +336,8 @@
             "filename": "dungeons-and-taverns-pillager-outpost-rework-1.1.jar",
             "name": "Dungeons and Taverns Pillager Outpost Rework",
             "url": "https://modrinth.com/mod/QIt10I7z",
-            "version": "1.1"
+            "version": "1.1",
+            "index": "core/dungeons-and-taverns-pillager-outpost-overhaul.pw.toml"
         },
         {
             "authors": [
@@ -313,7 +346,8 @@
             "filename": "dungeons-and-taverns-swamp-hut-rework-1.jar",
             "name": "Dungeons and Taverns Swamp Hut Rework",
             "url": "https://modrinth.com/mod/nWSeFpQt",
-            "version": "1"
+            "version": "1",
+            "index": "core/dungeons-and-taverns-swamp-hut-overhaul.pw.toml"
         },
         {
             "authors": [
@@ -322,7 +356,8 @@
             "filename": "dungeons+-1.8.4b.jar",
             "name": "Dungeons+",
             "url": "https://modrinth.com/mod/nHORcEHd",
-            "version": "1.8.4b"
+            "version": "1.8.4b",
+            "index": "core/dungeons+.pw.toml"
         },
         {
             "authors": [
@@ -331,7 +366,8 @@
             "filename": "Epic Dungeons-0.1.04-Fabric-1.19-1.20.4.jar",
             "name": "Epic Dungeons",
             "url": "https://modrinth.com/mod/iAwGa4r9",
-            "version": "0.1.04-Fabric-1.19-1.20.4"
+            "version": "0.1.04-Fabric-1.19-1.20.4",
+            "index": "core/epic-dungeons-a-roguelike-minecraft.pw.toml"
         },
         {
             "authors": [
@@ -340,7 +376,8 @@
             "filename": "fabric-api-0.92.6+1.20.1.jar",
             "name": "Fabric API",
             "url": "https://modrinth.com/mod/P7dR8mSH",
-            "version": "0.92.6+1.20.1"
+            "version": "0.92.6+1.20.1",
+            "index": "core/fabric-api.pw.toml"
         },
         {
             "authors": [
@@ -349,7 +386,8 @@
             "filename": "fabric-seasons-2.4.2-BETA+1.20.jar",
             "name": "Fabric Seasons",
             "url": "https://modrinth.com/mod/KJe6y9Eu",
-            "version": "2.4.2-BETA+1.20"
+            "version": "2.4.2-BETA+1.20",
+            "index": "core/fabric-seasons.pw.toml"
         },
         {
             "authors": [
@@ -358,7 +396,8 @@
             "filename": "fabric-seasons-terralith-2.3.7-compat-1.0.jar",
             "name": "Fabric Seasons: Terralith Compat",
             "url": "https://modrinth.com/mod/D53qveoj",
-            "version": "1.0-2.3.7"
+            "version": "1.0-2.3.7",
+            "index": "core/fabric-seasons-terralith-compat.pw.toml"
         },
         {
             "authors": [
@@ -367,7 +406,8 @@
             "filename": "ferritecore-6.0.1-fabric.jar",
             "name": "FerriteCore",
             "url": "https://modrinth.com/mod/uXXizFIs",
-            "version": "6.0.1"
+            "version": "6.0.1",
+            "index": "core/ferrite-core.pw.toml"
         },
         {
             "authors": [
@@ -376,7 +416,8 @@
             "filename": "GlitchCore-fabric-1.20.1-0.0.1.1.jar",
             "name": "GlitchCore",
             "url": "https://modrinth.com/mod/s3dmwKy5",
-            "version": "0.0.1.1"
+            "version": "0.0.1.1",
+            "index": "core/glitchcore.pw.toml"
         },
         {
             "authors": [
@@ -385,7 +426,8 @@
             "filename": "gravestones-1.2.6+1.20.1+A.jar",
             "name": "Gravestones",
             "url": "https://modrinth.com/mod/Heh3BbSv",
-            "version": "1.2.6"
+            "version": "1.2.6",
+            "index": "core/pneumono_gravestones.pw.toml"
         },
         {
             "authors": [
@@ -394,7 +436,8 @@
             "filename": "guarding-2.4.0.jar",
             "name": "Guarding",
             "url": "https://modrinth.com/mod/aV1COQ7a",
-            "version": "2.4.0"
+            "version": "2.4.0",
+            "index": "core/guarding.pw.toml"
         },
         {
             "authors": [
@@ -403,7 +446,8 @@
             "filename": "immersive_aircraft-1.4.0+1.20.1-fabric.jar",
             "name": "Immersive Aircraft",
             "url": "https://modrinth.com/mod/x3HZvrj6",
-            "version": "1.4.0+1.20.1"
+            "version": "1.4.0+1.20.1",
+            "index": "core/immersive-aircraft.pw.toml"
         },
         {
             "authors": [
@@ -412,7 +456,8 @@
             "filename": "Incendium_1.20.x_v5.3.5.jar",
             "name": "Incendium",
             "url": "https://modrinth.com/mod/ZVzW5oNS",
-            "version": "5.3.5"
+            "version": "5.3.5",
+            "index": "core/incendium.pw.toml"
         },
         {
             "authors": [
@@ -421,7 +466,8 @@
             "filename": "infusion_table-1.2.0-1.20-fabric.jar",
             "name": "Infusion Table",
             "url": "https://modrinth.com/mod/W9CiRGYK",
-            "version": "1.2.0"
+            "version": "1.2.0",
+            "index": "core/infusion-table.pw.toml"
         },
         {
             "authors": [
@@ -430,7 +476,8 @@
             "filename": "integrated_api-1.5.1+1.20.1-fabric.jar",
             "name": "Integrated API",
             "url": "https://modrinth.com/mod/V6fKbpBN",
-            "version": "1.5.1+1.20.1-fabric"
+            "version": "1.5.1+1.20.1-fabric",
+            "index": "core/integrated-api.pw.toml"
         },
         {
             "authors": [
@@ -439,7 +486,8 @@
             "filename": "InvView-1.4.12-1.20+.jar",
             "name": "InvView",
             "url": "https://modrinth.com/mod/jrDKjZP7",
-            "version": "1.4.12-1.20+"
+            "version": "1.4.12-1.20+",
+            "index": "core/invview.pw.toml"
         },
         {
             "authors": [
@@ -450,7 +498,8 @@
             "filename": "inventorio-mc1.20.1-fabric-v1.10.4.jar",
             "name": "Inventorio",
             "url": "https://modrinth.com/mod/LcafSQPm",
-            "version": "1.10.4"
+            "version": "1.10.4",
+            "index": "core/inventorio.pw.toml"
         },
         {
             "authors": [
@@ -459,7 +508,8 @@
             "filename": "InventorySorter-1.9.0-1.20.jar",
             "name": "Inventory Sorter",
             "url": "https://modrinth.com/mod/5ibSyLAz",
-            "version": "1.9.0-1.20"
+            "version": "1.9.0-1.20",
+            "index": "core/inventory-sorting.pw.toml"
         },
         {
             "authors": [
@@ -468,7 +518,8 @@
             "filename": "Jade-1.20-Fabric-11.13.1.jar",
             "name": "Jade",
             "url": "https://modrinth.com/mod/nvQzSEkH",
-            "version": "11.13.1+fabric"
+            "version": "11.13.1+fabric",
+            "index": "core/jade.pw.toml"
         },
         {
             "authors": [
@@ -477,7 +528,8 @@
             "filename": "krypton-0.2.3.jar",
             "name": "Krypton",
             "url": "https://modrinth.com/mod/fQEb0iXm",
-            "version": "0.2.3"
+            "version": "0.2.3",
+            "index": "core/krypton.pw.toml"
         },
         {
             "authors": [
@@ -487,7 +539,8 @@
             "filename": "lithium-fabric-mc1.20.1-0.11.4.jar",
             "name": "Lithium",
             "url": "https://modrinth.com/mod/gvQqBUqZ",
-            "version": "0.11.4"
+            "version": "0.11.4",
+            "index": "core/lithium.pw.toml"
         },
         {
             "authors": [
@@ -497,7 +550,8 @@
             "filename": "man_of_many_planes-0.2.0+1.20.1-fabric.jar",
             "name": "Man of Many Planes",
             "url": "https://modrinth.com/mod/9qdTHi0q",
-            "version": "0.2.0+1.20.1"
+            "version": "0.2.0+1.20.1",
+            "index": "core/man-of-many-planes.pw.toml"
         },
         {
             "authors": [
@@ -506,7 +560,8 @@
             "filename": "memoryleakfix-fabric-1.17+-1.1.5.jar",
             "name": "Memory Leak Fix",
             "url": "https://modrinth.com/mod/NRjRiSSD",
-            "version": "1.1.5"
+            "version": "1.1.5",
+            "index": "core/memoryleakfix.pw.toml"
         },
         {
             "authors": [
@@ -516,7 +571,8 @@
             "filename": "midnightcontrols-1.9.4+1.20.jar",
             "name": "MidnightControls",
             "url": "https://modrinth.com/mod/bXX9h73M",
-            "version": "1.9.4+1.20"
+            "version": "1.9.4+1.20",
+            "index": "core/midnightcontrols.pw.toml"
         },
         {
             "authors": [
@@ -525,7 +581,8 @@
             "filename": "midnightlib-fabric-1.9.1+1.20.1.jar",
             "name": "MidnightLib",
             "url": "https://modrinth.com/mod/codAaoxh",
-            "version": "1.9.1"
+            "version": "1.9.1",
+            "index": "core/midnightlib.pw.toml"
         },
         {
             "authors": [
@@ -534,7 +591,8 @@
             "filename": "mob_explosion_griefing-1.1.0_1.20.x.jar",
             "name": "Mob Explosion Griefing Gamerule",
             "url": "https://modrinth.com/mod/l9H9JPmo",
-            "version": "1.1.0_1.20.x"
+            "version": "1.1.0_1.20.x",
+            "index": "core/mobexplosiongriefinggamerule.pw.toml"
         },
         {
             "authors": [
@@ -543,7 +601,8 @@
             "filename": "modernfix-fabric-5.25.2+mc1.20.1.jar",
             "name": "ModernFix",
             "url": "https://modrinth.com/mod/nmDcB62a",
-            "version": "5.25.2+mc1.20.1"
+            "version": "5.25.2+mc1.20.1",
+            "index": "core/modernfix.pw.toml"
         },
         {
             "authors": [
@@ -552,7 +611,8 @@
             "filename": "moonlight-1.20-2.16.16-fabric.jar",
             "name": "Moonlight",
             "url": "https://modrinth.com/mod/twkfQtEc",
-            "version": "1.20-2.16.16"
+            "version": "1.20-2.16.16",
+            "index": "core/moonlight.pw.toml"
         },
         {
             "authors": [
@@ -561,7 +621,8 @@
             "filename": "packetfixer-3.3.1-1.18-1.20.4-merged.jar",
             "name": "PacketFixer",
             "url": "https://modrinth.com/mod/c7m1mi73",
-            "version": "3.3.1"
+            "version": "3.3.1",
+            "index": "core/packet-fixer.pw.toml"
         },
         {
             "authors": [
@@ -570,7 +631,8 @@
             "filename": "Platform-fabric-1.20.1-1.2.7.jar",
             "name": "Platform",
             "url": "https://modrinth.com/mod/i6fiqm5y",
-            "version": "1.2.7"
+            "version": "1.2.7",
+            "index": "core/platform.pw.toml"
         },
         {
             "authors": [
@@ -579,7 +641,8 @@
             "filename": "pneumonocore-1.2.0+1.20.1.jar",
             "name": "PneumonoCore",
             "url": "https://modrinth.com/mod/ZLKQjA7t",
-            "version": "1.20.1"
+            "version": "1.20.1",
+            "index": "core/pneumono_core.pw.toml"
         },
         {
             "authors": [
@@ -588,7 +651,8 @@
             "filename": "RoguelikeDungeons-2.1.0-1.20.1-fabric.jar",
             "name": "Roguelike Dungeons",
             "url": "https://modrinth.com/mod/MFpvbNGE",
-            "version": "2.1.0-1.20.1-fabric"
+            "version": "2.1.0-1.20.1-fabric",
+            "index": "core/roguelikedungeons.pw.toml"
         },
         {
             "authors": [
@@ -597,7 +661,8 @@
             "filename": "starterkit-1.20.1-7.4.jar",
             "name": "Starter Kit",
             "url": "https://modrinth.com/mod/6L3ydNi8",
-            "version": "7.4"
+            "version": "7.4",
+            "index": "core/starter-kit.pw.toml"
         },
         {
             "authors": [
@@ -606,7 +671,8 @@
             "filename": "supplementaries-1.20-3.1.41-fabric.jar",
             "name": "Supplementaries",
             "url": "https://modrinth.com/mod/fFEIiSDQ",
-            "version": "1.20-3.1.41"
+            "version": "1.20-3.1.41",
+            "index": "core/supplementaries.pw.toml"
         },
         {
             "authors": [
@@ -615,7 +681,8 @@
             "filename": "Terralith_1.20.x_v2.5.4.jar",
             "name": "Terralith",
             "url": "https://modrinth.com/mod/8oi3bsk5",
-            "version": "2.5.4"
+            "version": "2.5.4",
+            "index": "core/terralith.pw.toml"
         },
         {
             "authors": [
@@ -624,7 +691,8 @@
             "filename": "Terralith_ReStoned_v1.2.jar",
             "name": "Terralith ReStoned",
             "url": "https://modrinth.com/mod/oTQsXi8U",
-            "version": "1.2"
+            "version": "1.2",
+            "index": "core/terralith-restoned.pw.toml"
         },
         {
             "authors": [
@@ -634,7 +702,8 @@
             "filename": "ToughAsNails-fabric-1.20.1-9.2.0.171.jar",
             "name": "ToughAsNails",
             "url": "https://modrinth.com/mod/ge1sOdFH",
-            "version": "9.2.0.171"
+            "version": "9.2.0.171",
+            "index": "core/tough-as-nails.pw.toml"
         },
         {
             "authors": [
@@ -643,7 +712,8 @@
             "filename": "totw_additions-1.3.0-1.20.x-fabric.jar",
             "name": "Towers of the Wild: Additions",
             "url": "https://modrinth.com/mod/kzdWjLDh",
-            "version": "1.3"
+            "version": "1.3",
+            "index": "core/towers-of-the-wild-additions.pw.toml"
         },
         {
             "authors": [
@@ -652,7 +722,8 @@
             "filename": "trashslot-fabric-1.20-15.1.1.jar",
             "name": "TrashSlot",
             "url": "https://modrinth.com/mod/vRYk0bv7",
-            "version": "15.1.1"
+            "version": "15.1.1",
+            "index": "core/trashslot.pw.toml"
         },
         {
             "authors": [
@@ -661,7 +732,8 @@
             "filename": "vlib-1.20.1-0.0.15-alpha+fabric.jar",
             "name": "VLib",
             "url": "https://modrinth.com/mod/V1UmcEMX",
-            "version": "1.20.1-0.0.15-alpha"
+            "version": "1.20.1-0.0.15-alpha",
+            "index": "core/vlib.pw.toml"
         },
         {
             "authors": [
@@ -669,10 +741,11 @@
                 "Tri0de",
                 "Rubydesic"
             ],
-            "filename": "eureka-1201-1.5.2-beta.3.jar",
+            "filename": "eureka-1201-1.5.2-beta.4.jar",
             "name": "VS Eureka Mod",
             "url": "https://modrinth.com/mod/EO8aSHxh",
-            "version": "1.5.2-beta.3"
+            "version": "1.5.2-beta.4",
+            "index": "core/eureka.pw.toml"
         },
         {
             "authors": [
@@ -683,7 +756,8 @@
             "filename": "ValkyrienPirates-1.8.3.jar",
             "name": "Valkyrien Pirates",
             "url": "https://modrinth.com/mod/jv8hXuHT",
-            "version": "1.8.3"
+            "version": "1.8.3",
+            "index": "core/valkyrien-pirates.pw.toml"
         },
         {
             "authors": [
@@ -692,7 +766,8 @@
             "filename": "vs_sails-1.20.1-0.2.3-fabric.jar",
             "name": "Valkyrien Sails",
             "url": "https://modrinth.com/mod/esFadCt9",
-            "version": "0.2.3"
+            "version": "0.2.3",
+            "index": "core/valkyrien-sails.pw.toml"
         },
         {
             "authors": [
@@ -701,7 +776,8 @@
             "filename": "vs_sup_Fix-1.20.1-fabric-1.3.jar",
             "name": "Valkyrien Skies + Supplementaries Cannon Fix",
             "url": "https://modrinth.com/mod/lvoGABiq",
-            "version": "1.20.1-fabric-1.3"
+            "version": "1.20.1-fabric-1.3",
+            "index": "core/valkyrien-skies-2-+-supplementaries-cannon-fix.pw.toml"
         },
         {
             "authors": [
@@ -711,7 +787,8 @@
             "filename": "valkyrienskies-120-2.3.0-beta.12.jar",
             "name": "Valkyrien Skies 2",
             "url": "https://modrinth.com/mod/V5ujR2yw",
-            "version": "2.3.0-beta.12"
+            "version": "2.3.0-beta.12",
+            "index": "core/valkyrien-skies.pw.toml"
         },
         {
             "authors": [
@@ -720,7 +797,8 @@
             "filename": "vanillabackport-fabric-1.20.1-1.1.2.jar",
             "name": "VanillaBackport",
             "url": "https://modrinth.com/mod/6xwxDTgf",
-            "version": "1.1.2"
+            "version": "1.1.2",
+            "index": "core/vanillabackport.pw.toml"
         },
         {
             "authors": [
@@ -729,7 +807,8 @@
             "filename": "waystones-fabric-1.20.1-14.1.17.jar",
             "name": "Waystones",
             "url": "https://modrinth.com/mod/LOpKHB2A",
-            "version": "14.1.17"
+            "version": "14.1.17",
+            "index": "core/waystones.pw.toml"
         },
         {
             "authors": [
@@ -738,7 +817,8 @@
             "filename": "Xaeros_Minimap_25.2.10_Fabric_1.20.jar",
             "name": "Xaero's Minimap",
             "url": "https://modrinth.com/mod/1bokaNcj",
-            "version": "25.2.10"
+            "version": "25.2.10",
+            "index": "core/xaeros-minimap.pw.toml"
         },
         {
             "authors": [
@@ -747,7 +827,8 @@
             "filename": "XaerosWorldMap_1.39.12_Fabric_1.20.jar",
             "name": "Xaero's World Map",
             "url": "https://modrinth.com/mod/NcUtCpym",
-            "version": "1.39.12"
+            "version": "1.39.12",
+            "index": "core/xaeros-world-map.pw.toml"
         },
         {
             "authors": [
@@ -756,7 +837,8 @@
             "filename": "YungsApi-1.20-Fabric-4.0.6.jar",
             "name": "YUNG's API",
             "url": "https://modrinth.com/mod/Ua7DFN59",
-            "version": "1.20-Fabric-4.0.6"
+            "version": "1.20-Fabric-4.0.6",
+            "index": "core/yungs-api.pw.toml"
         },
         {
             "authors": [
@@ -766,7 +848,8 @@
             "filename": "YungsBetterEndIsland-1.20-Fabric-2.0.6.jar",
             "name": "YUNG's Better End Island",
             "url": "https://modrinth.com/mod/2BwBOmBQ",
-            "version": "1.20-Fabric-2.0.6"
+            "version": "1.20-Fabric-2.0.6",
+            "index": "core/yungs-better-end-island.pw.toml"
         },
         {
             "authors": [
@@ -775,14 +858,15 @@
             "filename": "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar",
             "name": "YetAnotherConfigLib",
             "url": "https://modrinth.com/mod/1eAoo2KR",
-            "version": "3.6.6+1.20.1-fabric"
+            "version": "3.6.6+1.20.1-fabric",
+            "index": "core/yacl.pw.toml"
         },
         {
             "filename": "totw_modded-fabric-1.20.1-1.0.5.jar",
-            "name": "totw_modded-fabric-1.20.1-1.0.5"
+            "name": "totw_modded-fabric-1.20.1-1.0.5",
+            "index": "core/totw-modded.pw.toml"
         }
     ],
-
     "client": [
         {
             "authors": [
@@ -791,7 +875,8 @@
             "filename": "AmbientSounds_FABRIC_v6.3.1_mc1.20.1.jar",
             "name": "AmbientSounds",
             "url": "https://modrinth.com/mod/fM515JnW",
-            "version": "6.3.1"
+            "version": "6.3.1",
+            "index": "client/ambientsounds.pw.toml"
         },
         {
             "authors": [
@@ -800,7 +885,8 @@
             "filename": "appleskin-fabric-mc1.20.1-2.5.1.jar",
             "name": "AppleSkin",
             "url": "https://modrinth.com/mod/EsAfCjCV",
-            "version": "2.5.1+mc1.20"
+            "version": "2.5.1+mc1.20",
+            "index": "client/appleskin.pw.toml"
         },
         {
             "authors": [
@@ -809,7 +895,8 @@
             "filename": "continuity-3.0.0+1.20.1.jar",
             "name": "Continuity",
             "url": "https://modrinth.com/mod/1IjD5062",
-            "version": "3.0.0+1.20.1"
+            "version": "3.0.0+1.20.1",
+            "index": "client/continuity.pw.toml"
         },
         {
             "authors": [
@@ -818,7 +905,8 @@
             "filename": "Controlling-fabric-1.20.1-12.0.2.jar",
             "name": "Controlling For Fabric",
             "url": "https://modrinth.com/mod/xv94TkTM",
-            "version": "12.0.2"
+            "version": "12.0.2",
+            "index": "client/controlling.pw.toml"
         },
         {
             "authors": [
@@ -827,7 +915,8 @@
             "filename": "coolrain-1.3.1-1.20.1.jar",
             "name": "CoolRain",
             "url": "https://modrinth.com/mod/iDyqnQLT",
-            "version": "1.3.1-1.20.1"
+            "version": "1.3.1-1.20.1",
+            "index": "client/coolrain.pw.toml"
         },
         {
             "authors": [
@@ -836,7 +925,8 @@
             "filename": "Drip Sounds-0.5.2+1.20.4-Fabric.jar",
             "name": "Drip Sounds",
             "url": "https://modrinth.com/mod/T8MMXTpr",
-            "version": "0.5.2"
+            "version": "0.5.2",
+            "index": "client/dripsounds.pw.toml"
         },
         {
             "authors": [
@@ -890,7 +980,8 @@
             "filename": "dynamic-fps-3.9.5+minecraft-1.20.0-quilt.jar",
             "name": "Dynamic FPS",
             "url": "https://modrinth.com/mod/LQ3K71Q1",
-            "version": "3.9.5"
+            "version": "3.9.5",
+            "index": "client/dynamic-fps.pw.toml"
         },
         {
             "authors": [
@@ -899,7 +990,8 @@
             "filename": "entity_model_features_1.20.1-fabric-3.0.7.jar",
             "name": "Entity Model Features",
             "url": "https://modrinth.com/mod/4I1XuqiY",
-            "version": "3.0.7"
+            "version": "3.0.7",
+            "index": "client/entity-model-features.pw.toml"
         },
         {
             "authors": [
@@ -908,7 +1000,8 @@
             "filename": "entity_texture_features_1.20.1-fabric-7.0.6.jar",
             "name": "Entity Texture Features",
             "url": "https://modrinth.com/mod/BVzZfTc1",
-            "version": "7.0.6"
+            "version": "7.0.6",
+            "index": "client/entitytexturefeatures.pw.toml"
         },
         {
             "authors": [
@@ -917,7 +1010,8 @@
             "filename": "entityculling-fabric-1.9.4-mc1.20.1.jar",
             "name": "EntityCulling",
             "url": "https://modrinth.com/mod/NNAgCjsB",
-            "version": "1.9.4"
+            "version": "1.9.4",
+            "index": "client/entityculling.pw.toml"
         },
         {
             "authors": [
@@ -926,7 +1020,8 @@
             "filename": "fabricskyboxes-0.7.3+mc1.20.1.jar",
             "name": "FabricSkyBoxes",
             "url": "https://modrinth.com/mod/YBz7DOs8",
-            "version": "0.7.3+mc1.20.1"
+            "version": "0.7.3+mc1.20.1",
+            "index": "client/nuit.pw.toml"
         },
         {
             "authors": [
@@ -935,7 +1030,8 @@
             "filename": "fabrishot-1.10.1.jar",
             "name": "Fabrishot",
             "url": "https://modrinth.com/mod/3qsfQtE9",
-            "version": "1.10.1"
+            "version": "1.10.1",
+            "index": "client/fabrishot.pw.toml"
         },
         {
             "authors": [
@@ -944,7 +1040,8 @@
             "filename": "ImmediatelyFast-Fabric-1.5.3+1.20.4.jar",
             "name": "ImmediatelyFast",
             "url": "https://modrinth.com/mod/5ZwdcRci",
-            "version": "1.5.3+1.20.4"
+            "version": "1.5.3+1.20.4",
+            "index": "client/immediatelyfast.pw.toml"
         },
         {
             "authors": [
@@ -953,7 +1050,8 @@
             "filename": "indium-1.0.36+mc1.20.1.jar",
             "name": "Indium",
             "url": "https://modrinth.com/mod/Orvt0mRa",
-            "version": "1.0.36+mc1.20.1"
+            "version": "1.0.36+mc1.20.1",
+            "index": "client/indium.pw.toml"
         },
         {
             "authors": [
@@ -965,7 +1063,8 @@
             "filename": "iris-1.7.6+mc1.20.1.jar",
             "name": "Iris",
             "url": "https://modrinth.com/mod/YL57xq9U",
-            "version": "1.7.6+mc1.20.1"
+            "version": "1.7.6+mc1.20.1",
+            "index": "client/iris.pw.toml"
         },
         {
             "authors": [
@@ -974,11 +1073,13 @@
             "filename": "lambdynamiclights-4.4.0+1.20.1.jar",
             "name": "LambDynamicLights",
             "url": "https://modrinth.com/mod/yBW8D80W",
-            "version": "4.4.0+1.20.1"
+            "version": "4.4.0+1.20.1",
+            "index": "client/lambdynamiclights.pw.toml"
         },
         {
             "filename": "MRU-1.0.4+1.20.1+fabric.jar",
-            "name": "MRU-1.0.4+1.20.1+fabric"
+            "name": "MRU-1.0.4+1.20.1+fabric",
+            "index": "client/mru.pw.toml"
         },
         {
             "authors": [
@@ -989,7 +1090,8 @@
             "filename": "modmenu-7.2.2.jar",
             "name": "Mod Menu",
             "url": "https://modrinth.com/mod/mOgUt4GM",
-            "version": "7.2.2"
+            "version": "7.2.2",
+            "index": "client/modmenu.pw.toml"
         },
         {
             "authors": [
@@ -998,7 +1100,8 @@
             "filename": "modelfix-1.15-fabric.jar",
             "name": "Model Gap Fix",
             "url": "https://modrinth.com/mod/QdG47OkI",
-            "version": "1.15"
+            "version": "1.15",
+            "index": "client/modelfix.pw.toml"
         },
         {
             "authors": [
@@ -1007,7 +1110,8 @@
             "filename": "notenoughanimations-fabric-1.11.1-mc1.20.1.jar",
             "name": "NotEnoughAnimations",
             "url": "https://modrinth.com/mod/MPCX6s5C",
-            "version": "1.11.1"
+            "version": "1.11.1",
+            "index": "client/not-enough-animations.pw.toml"
         },
         {
             "authors": [
@@ -1016,7 +1120,8 @@
             "filename": "optigui-2.3.0-beta.9+1.20.jar",
             "name": "OptiGUI",
             "url": "https://modrinth.com/mod/JuksLGBQ",
-            "version": "2.3.0-beta.9+1.20"
+            "version": "2.3.0-beta.9+1.20",
+            "index": "client/optigui.pw.toml"
         },
         {
             "authors": [
@@ -1026,7 +1131,8 @@
             "filename": "PresenceFootsteps-1.10.1+1.20.1.jar",
             "name": "Presence Footsteps",
             "url": "https://modrinth.com/mod/rcTfTZr3",
-            "version": "1.10.1+1.20.1"
+            "version": "1.10.1+1.20.1",
+            "index": "client/presence-footsteps.pw.toml"
         },
         {
             "authors": [
@@ -1035,7 +1141,8 @@
             "filename": "reactivemusic-1.2.2+1.20.1.jar",
             "name": "Reactive Music",
             "url": "https://modrinth.com/mod/Bqnfeesx",
-            "version": "1.2.2+1.20.1"
+            "version": "1.2.2+1.20.1",
+            "index": "client/reactive-music.pw.toml"
         },
         {
             "authors": [
@@ -1044,7 +1151,8 @@
             "filename": "Redstone Sound Slider-1.0.2+mc1.20.1-fabric.jar",
             "name": "Redstone Sound Slider",
             "url": "https://modrinth.com/mod/tcswzSAY",
-            "version": "1.0.2"
+            "version": "1.0.2",
+            "index": "client/redstone-sound-slider.pw.toml"
         },
         {
             "authors": [
@@ -1053,7 +1161,8 @@
             "filename": "RoughlyEnoughItems-12.1.785-fabric.jar",
             "name": "Roughly Enough Items",
             "url": "https://modrinth.com/mod/nfn13YXA",
-            "version": "12.1.785"
+            "version": "12.1.785",
+            "index": "client/rei.pw.toml"
         },
         {
             "authors": [
@@ -1062,7 +1171,8 @@
             "filename": "Searchables-fabric-1.20.1-1.0.3.jar",
             "name": "Searchables",
             "url": "https://modrinth.com/mod/fuuu3xnx",
-            "version": "1.0.3"
+            "version": "1.0.3",
+            "index": "client/searchables.pw.toml"
         },
         {
             "authors": [
@@ -1071,7 +1181,8 @@
             "filename": "sodium-fabric-0.5.13+mc1.20.1.jar",
             "name": "Sodium",
             "url": "https://modrinth.com/mod/AANobbMI",
-            "version": "0.5.13+mc1.20.1"
+            "version": "0.5.13+mc1.20.1",
+            "index": "client/sodium.pw.toml"
         },
         {
             "authors": [
@@ -1080,7 +1191,8 @@
             "filename": "sodium-extra-0.5.9+mc1.20.1.jar",
             "name": "Sodium Extra",
             "url": "https://modrinth.com/mod/PtjYWJkn",
-            "version": "0.5.9+mc1.20.1"
+            "version": "0.5.9+mc1.20.1",
+            "index": "client/sodium-extra.pw.toml"
         },
         {
             "authors": [
@@ -1089,7 +1201,8 @@
             "filename": "soundcontroller-1.2.3-mc1.20.jar",
             "name": "Sound Controller",
             "url": "https://modrinth.com/mod/uY9zbflw",
-            "version": "1.2.3"
+            "version": "1.2.3",
+            "index": "client/sound-controller.pw.toml"
         },
         {
             "authors": [
@@ -1101,11 +1214,13 @@
             "filename": "sound-physics-remastered-fabric-1.20.1-1.5.1.jar",
             "name": "Sound Physics Remastered",
             "url": "https://modrinth.com/mod/qyVF9oeo",
-            "version": "1.20.1-1.5.1"
+            "version": "1.20.1-1.5.1",
+            "index": "client/sound-physics-remastered.pw.toml"
         },
         {
             "filename": "Sounds-2.2.1+1.20.1+fabric.jar",
-            "name": "Sounds-2.2.1+1.20.1+fabric"
+            "name": "Sounds-2.2.1+1.20.1+fabric",
+            "index": "client/sound.pw.toml"
         },
         {
             "authors": [
@@ -1114,11 +1229,9 @@
             "filename": "vsegamepadlite-1.0.0.lt-1.20.1-Fabric.jar",
             "name": "VSE Gamepad lite",
             "url": "https://modrinth.com/mod/o5w41Sp3",
-            "version": "1.0.0.lt-1.20.1-Fabric"
+            "version": "1.0.0.lt-1.20.1-Fabric",
+            "index": "client/vse-gamepad-lite.pw.toml"
         }
     ],
-
-    "server": [
-
-    ]
+    "server": []
 }
