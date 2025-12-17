@@ -112,6 +112,11 @@ def temp_environment_setup(temp_directory: str):
     os.makedirs(f"{temp_directory}/molasses.love/cobblemon-emergence", exist_ok=True)
 
 
+def mod_dictionary_list_append(dictionary_list: list[str], mod_dictionary: dict):
+    dictionary_list.append(mod['filename'])
+
+    return dictionary_list
+
 if __name__ == "__main__":
     # Get the current script directory in order to obtain the index files.
     # To do: Ensure there are other search paths for the index files.
@@ -128,15 +133,34 @@ if __name__ == "__main__":
     TEMP_DIRECTORY_WIN32 = path_to_posix(f"{Path.home()}/AppData/Local/Temp")
     TEMP_DIRECTORY_UNIX = path_to_posix("/var/tmp")  # Hopefully compatible enough.
 
+    mods: dict = {
+        "client": [],
+        "core": [],
+        "server": []
+    }
+
     # To do: Check if the temp directory has appropriate read/write mode.
 
     with open(MOD_LIST_PATH, 'r', encoding='utf-8') as mod_list_file:
         mod_list_string = mod_list_file.read()
         mod_list_dictionary = json.loads(mod_list_string)
 
-        for mod in mod_list_dictionary:
-            print(mod["filename"])
+        for mod_category in mod_list_dictionary:
+            print(f"\n[{Colors.YELLOW}{mod_category.upper()}{Colors.RESET}]")
+            
+            for mod in mod_list_dictionary[mod_category]:
+                log_message_info(f"Found mod \'{Colors.BLUE}{mod['name']}{Colors.RESET}\' in list.")
 
+                match mod_category:
+                    case "client":
+                        mod_dictionary_list_append(mods["client"], mod)
+                    case "core":
+                        mod_dictionary_list_append(mods["core"], mod)
+                    case "server":
+                        mod_dictionary_list_append(mods["server"], mod)
+                    case _:
+                        exit_error(f"Found unsupported mod category {mod_category}")
+    
     # Open the config file, get the modpack size.
     with open(CONFIG_PATH, "r", encoding="utf-8") as config_file:
         config_file_string = config_file.read()
@@ -150,11 +174,13 @@ if __name__ == "__main__":
         )
 
     if os.path.exists(INDEX_DIRECTORY):
-        index_files = os.listdir(INDEX_DIRECTORY)
+        index_subdirectories = os.listdir(INDEX_DIRECTORY)
     else:
         exit_error(
             f"Could not find Modrinth index file directory: `{Colors.YELLOW}{INDEX_DIRECTORY}{Colors.RESET}`"
         )
+
+    print("\n:: Read mod list.")
 
     # Make Windows use the right temp directory, and have a few sanity checks to ensure compatibility.
     match sys.platform:
@@ -172,26 +198,27 @@ if __name__ == "__main__":
             )
 
     # Iterate through all the index files, read their data into a dictionary, and update the modpack.
-    if index_files:
-        for index_file in index_files:
-            index_file_path = path_to_posix(f"{INDEX_DIRECTORY}/{index_file}")
+    if index_subdirectories:
+        for index_subdirectory in index_subdirectories:
+            for index_file in os.listdir(f"{INDEX_DIRECTORY}/{index_subdirectory}"):
+                index_file_path = path_to_posix(f"{INDEX_DIRECTORY}/{index_subdirectory}/{index_file}")
 
-            log_message_info(
-                f"Reading: `{Colors.GREEN}{os.path.basename(index_file_path)}{Colors.RESET}`"
-            )
-
-            with open(index_file_path, "r", encoding="utf-8") as index_file_data:
-                index_file_string = index_file_data.read()
-
-                index_file_dictionary = tomllib.loads(index_file_string)
-
-                print(
-                    f":: Checking: '{Colors.BLUE}{index_file_dictionary['name']}{Colors.RESET}'"
+                log_message_info(
+                    f"Reading: `{Colors.GREEN}{os.path.basename(index_file_path)}{Colors.RESET}`"
                 )
 
-                # To do:
-                # - Check if the modpack has changed since the last update.
-                # - Download missing files.
-                # - Remove old files.
+                with open(index_file_path, "r", encoding="utf-8") as index_file_data:
+                    index_file_string = index_file_data.read()
+
+                    index_file_dictionary = tomllib.loads(index_file_string)
+
+                    print(
+                        f":: Checking: '{Colors.BLUE}{index_file_dictionary['name']}{Colors.RESET}'"
+                    )
+
+                    # To do:
+                    # - Check if the modpack has changed since the last update.
+                    # - Download missing files.
+                    # - Remove old files.
     else:
         exit_error("No index files listed. Is the index directory empty?")
