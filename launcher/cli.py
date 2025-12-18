@@ -11,9 +11,12 @@ import tomllib
 import sys
 import shutil
 import json
+import hashlib
 
 from pathlib import PureWindowsPath, Path
 from dataclasses import dataclass
+
+import requests
 
 
 @dataclass
@@ -27,6 +30,7 @@ class Colors:
     YELLOW = "\033[0;33m"
     GREEN = "\033[0;32m"
     BLUE = "\033[0;34m"
+
 
 def log_message_info(message_string):
     """
@@ -95,7 +99,7 @@ def query_free_space() -> float:
     return available_gigabytes
 
 
-def temp_environment_setup(temp_directory: str):
+def temp_environment_setup(temp_directory: str) -> str:
     """
     Create the necessary temp directory for cached mod files.
     """
@@ -109,7 +113,11 @@ def temp_environment_setup(temp_directory: str):
             f"Could not find temp directory: `{Colors.YELLOW}{temp_directory}{Colors.RESET}`"
         )
 
-    os.makedirs(f"{temp_directory}/molasses.love/cobblemon-emergence", exist_ok=True)
+    temp_directory_path = f"{temp_directory}/molasses.love/cobblemon-emergence"
+
+    os.makedirs(temp_directory_path, exist_ok=True)
+
+    return temp_directory_path
 
 
 def mod_dictionary_list_append(dictionary_list: list[str], mod_dictionary: dict):
@@ -147,7 +155,10 @@ if __name__ == "__main__":
     argument_group_actions = argument_parser.add_mutually_exclusive_group(required=True)
 
     argument_group_actions.add_argument(
-        "-u", "--update", help="Update mod files; download new files, delete old ones.", action="store_true"
+        "-u",
+        "--update",
+        help="Update mod files; download new files, delete old ones.",
+        action="store_true",
     )
     argument_group_actions.add_argument(
         "-x", "--check", help="Check for updates to the modpack.", action="store_true"
@@ -157,7 +168,9 @@ if __name__ == "__main__":
 
     if not arguments.client and not arguments.server:
         argument_parser.print_help()
-        exit_error("At least one of either the client or server mod directory must be specified.")
+        exit_error(
+            "At least one of either the client or server mod directory must be specified."
+        )
 
     if arguments.client:
         installation_target_directories.append(arguments.client)
@@ -215,22 +228,25 @@ if __name__ == "__main__":
             f"Could not find Modrinth index file directory: `{Colors.YELLOW}{INDEX_DIRECTORY}{Colors.RESET}`"
         )
 
+    temp_directory_path: str = ""
+
     # Make Windows use the right temp directory, and have a few sanity checks to ensure compatibility.
     match sys.platform:
         case "win32":
-            temp_environment_setup(TEMP_DIRECTORY_WIN32)
+            temp_directory_path = temp_environment_setup(TEMP_DIRECTORY_WIN32)
         case "linux":
-            temp_environment_setup(TEMP_DIRECTORY_UNIX)
+            temp_directory_path = temp_environment_setup(TEMP_DIRECTORY_UNIX)
         case "freebsd":
-            temp_environment_setup(TEMP_DIRECTORY_UNIX)
+            temp_directory_path = temp_environment_setup(TEMP_DIRECTORY_UNIX)
         case "darwin":
-            temp_environment_setup(TEMP_DIRECTORY_UNIX)
+            temp_directory_path = temp_environment_setup(TEMP_DIRECTORY_UNIX)
         case _:
             exit_error(
                 "Unsupported platform, can't create the temp directory for cache."
             )
 
     mods_latest: list = []
+    mods_latest_files: list = []
 
     if arguments.client:
         mods_latest: list = mod_list_dictionary["core"] + mod_list_dictionary["client"]
@@ -238,18 +254,62 @@ if __name__ == "__main__":
         mods_latest: list = mod_list_dictionary["core"] + mod_list_dictionary["server"]
     else:
         exit_error("Unknown mod installation target.")
-    
-    for mod in mods_latest:
-        #if not mod["filename"] in mods_local_current:
-            log_message_info(f"[ {Colors.YELLOW}⧗{Colors.RESET} ] Installing mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}'")
 
-            with open(f"{INDEX_DIRECTORY}/{mod['index']}", 'r', encoding="utf-8") as index_file_data:
+    for mod in mods_latest:
+        mods_latest_files.append(mod["filename"])
+
+        if not mod["filename"] in mods_local_current:
+            log_message_info(
+                f"[ {Colors.YELLOW}⧗{Colors.RESET} ] Installing mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}'"
+            )
+
+            with open(
+                f"{INDEX_DIRECTORY}/{mod["index"]}", "r", encoding="utf-8"
+            ) as index_file_data:
                 index_file_string = index_file_data.read()
 
                 index_file_dictionary = tomllib.loads(index_file_string)
 
-                print(index_file_dictionary["download"]["url"])
+                mod_url = index_file_dictionary["download"]["url"]
 
+                mod_download_destination_path = (
+                    f"{temp_directory_path}/{index_file_dictionary['filename']}"
+                )
 
-        #else:
-        #   log_message_info(f"[ {Colors.GREEN}✔{Colors.RESET} ] Mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}' already installed and up to date.")
+                print(mod_download_destination_path)
+
+                with requests.get(mod_url, stream=True) as mod_request:
+                    with open(mod_download_destination_path, "wb") as mod_file_stream:
+                        shutil.copyfileobj(mod_request.raw, mod_file_stream)
+
+                with open(mod_download_destination_path, "rb") as mod_file:
+                    mod_file_hash = hashlib.sha512(mod_file.read()).hexdigest()
+                    print(mod_file_hash)
+
+                mod_file_hash_expected = index_file_dictionary["download"]["hash"]
+
+                if mod_file_hash == mod_file_hash_expected:
+                    log_message_info(
+                        f"[ {Colors.GREEN}✔{Colors.RESET} ] Installed mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}'"
+                    )
+                else:
+                    exit_error(
+                        f"Hash mismatch for mod {mod['name']}.\n:: Got: {mod_file_hash}\n ::Expected: {mod_file_hash_expected}"
+                    )
+
+                mods_downloaded.append(mod["filename"])
+
+                log_message_info("Moving mod into installation directory.")
+
+                shutil.move(
+                    mod_download_destination_path,
+                    f"{installation_target}/{index_file_dictionary['filename']}",
+                )
+        else:
+            log_message_info(f"[ {Colors.GREEN}✔{Colors.RESET} ] Mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}' already installed and up to date.")
+
+    for mod_local in mods_local_current:
+        if not mod_local in mods_latest_files:
+            log_message_info(f"Deleting file {mod_local}")                
+
+            os.remove(f"{installation_target}/{mod_local}")
