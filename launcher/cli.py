@@ -121,9 +121,43 @@ def temp_environment_setup(temp_directory: str) -> str:
 
 
 def mod_dictionary_list_append(dictionary_list: list[str], mod_dictionary: dict):
-    dictionary_list.append(mod["filename"])
+    """
+    Append a mod's filename to a list.
+    """
+
+    dictionary_list.append(mod_dictionary["filename"])
 
     return dictionary_list
+
+
+def mod_download_and_verify(
+    mod_url: str,
+    mod_download_desination_path: str,
+    index_file_dictionary: dict,
+    mod_dictionary: dict,
+):
+    """
+    Download a mod using a Requests stream, and verify its contents using a
+    SHA512 hash.
+    """
+
+    with requests.get(mod_url, stream=True, timeout=5) as mod_request:
+        with open(mod_download_desination_path, "wb") as mod_file_stream:
+            shutil.copyfileobj(mod_request.raw, mod_file_stream)
+
+    with open(mod_download_desination_path, "rb") as mod_file:
+        mod_file_hash = hashlib.sha512(mod_file.read()).hexdigest()
+
+    mod_file_hash_expected = index_file_dictionary["download"]["hash"]
+
+    if mod_file_hash == mod_file_hash_expected:
+        log_message_info(
+            f"[ {Colors.YELLOW}⧗{Colors.RESET} ] Downloaded mod '{Colors.BLUE}{mod_dictionary["name"]}{Colors.RESET}'"
+        )
+    else:
+        exit_error(
+            f"Hash mismatch for mod {mod_dictionary['name']}.\n:: Got: {mod_file_hash}\n ::Expected: {mod_file_hash_expected}"
+        )
 
 
 if __name__ == "__main__":
@@ -133,7 +167,6 @@ if __name__ == "__main__":
 
     free_space_requirement: float = 0.5  # This value is replaced by the config file.
     free_space = query_free_space()
-    index_files = None
 
     INDEX_DIRECTORY = path_to_posix(f"{script_directory}/../data/index")
     DATA_PATH = f"{script_directory}/../data"
@@ -143,7 +176,6 @@ if __name__ == "__main__":
     TEMP_DIRECTORY_UNIX = path_to_posix("/var/tmp")  # Hopefully compatible enough.
 
     mods_local_current: list = []
-    installation_target_directories: list = []
 
     mods: dict = {"client": [], "core": [], "server": []}
 
@@ -171,16 +203,6 @@ if __name__ == "__main__":
         exit_error(
             "At least one of either the client or server mod directory must be specified."
         )
-
-    if arguments.client:
-        installation_target_directories.append(arguments.client)
-    if arguments.server:
-        installation_target_directories.append(arguments.server)
-
-    for installation_target in installation_target_directories:
-        for local_mod_path in os.listdir(installation_target):
-            if os.path.isfile(f"{installation_target}/{local_mod_path}"):
-                mods_local_current.append(local_mod_path)
 
     # To do: Check if the temp directory has appropriate read/write mode.
 
@@ -228,18 +250,18 @@ if __name__ == "__main__":
             f"Could not find Modrinth index file directory: `{Colors.YELLOW}{INDEX_DIRECTORY}{Colors.RESET}`"
         )
 
-    temp_directory_path: str = ""
+    _temp_directory_path: str = ""
 
     # Make Windows use the right temp directory, and have a few sanity checks to ensure compatibility.
     match sys.platform:
         case "win32":
-            temp_directory_path = temp_environment_setup(TEMP_DIRECTORY_WIN32)
+            _temp_directory_path = temp_environment_setup(TEMP_DIRECTORY_WIN32)
         case "linux":
-            temp_directory_path = temp_environment_setup(TEMP_DIRECTORY_UNIX)
+            _temp_directory_path = temp_environment_setup(TEMP_DIRECTORY_UNIX)
         case "freebsd":
-            temp_directory_path = temp_environment_setup(TEMP_DIRECTORY_UNIX)
+            _temp_directory_path = temp_environment_setup(TEMP_DIRECTORY_UNIX)
         case "darwin":
-            temp_directory_path = temp_environment_setup(TEMP_DIRECTORY_UNIX)
+            _temp_directory_path = temp_environment_setup(TEMP_DIRECTORY_UNIX)
         case _:
             exit_error(
                 "Unsupported platform, can't create the temp directory for cache."
@@ -248,68 +270,68 @@ if __name__ == "__main__":
     mods_latest: list = []
     mods_latest_files: list = []
 
-    if arguments.client:
-        mods_latest: list = mod_list_dictionary["core"] + mod_list_dictionary["client"]
-    elif arguments.server:
-        mods_latest: list = mod_list_dictionary["core"] + mod_list_dictionary["server"]
-    else:
-        exit_error("Unknown mod installation target.")
+    for mod_category in mod_list_dictionary:
+        match mod_category:
+            case "client":
+                installation_target = arguments.client
+            case "server":
+                installation_target = arguments.server
+            case _:
+                continue
 
-    for mod in mods_latest:
-        mods_latest_files.append(mod["filename"])
+        mods_latest: list = mod_list_dictionary["core"] + mod_list_dictionary[mod_category]
+        
+        mods_local_current = os.listdir(installation_target)
 
-        if not mod["filename"] in mods_local_current:
-            log_message_info(
-                f"[ {Colors.YELLOW}⧗{Colors.RESET} ] Installing mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}'"
-            )
+        for mod in mods_latest:
+            mods_latest_files.append(mod["filename"])
 
-            with open(
-                f"{INDEX_DIRECTORY}/{mod["index"]}", "r", encoding="utf-8"
-            ) as index_file_data:
-                index_file_string = index_file_data.read()
-
-                index_file_dictionary = tomllib.loads(index_file_string)
-
-                mod_url = index_file_dictionary["download"]["url"]
-
-                mod_download_destination_path = (
-                    f"{temp_directory_path}/{index_file_dictionary['filename']}"
+            if not mod["filename"] in mods_latest_files:
+                log_message_info(
+                    f"Mod '{Colors.BLUE}{mod['filename']}{Colors.RESET}' not in '{mod_category}', skipping."
                 )
 
-                print(mod_download_destination_path)
+                continue
 
-                with requests.get(mod_url, stream=True) as mod_request:
-                    with open(mod_download_destination_path, "wb") as mod_file_stream:
-                        shutil.copyfileobj(mod_request.raw, mod_file_stream)
-
-                with open(mod_download_destination_path, "rb") as mod_file:
-                    mod_file_hash = hashlib.sha512(mod_file.read()).hexdigest()
-                    print(mod_file_hash)
-
-                mod_file_hash_expected = index_file_dictionary["download"]["hash"]
-
-                if mod_file_hash == mod_file_hash_expected:
-                    log_message_info(
-                        f"[ {Colors.GREEN}✔{Colors.RESET} ] Installed mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}'"
-                    )
-                else:
-                    exit_error(
-                        f"Hash mismatch for mod {mod['name']}.\n:: Got: {mod_file_hash}\n ::Expected: {mod_file_hash_expected}"
-                    )
-
-                mods_downloaded.append(mod["filename"])
-
-                log_message_info("Moving mod into installation directory.")
-
-                shutil.move(
-                    mod_download_destination_path,
-                    f"{installation_target}/{index_file_dictionary['filename']}",
+            if not mod["filename"] in mods_local_current:
+                log_message_info(
+                    f"[ {Colors.YELLOW}⧗{Colors.RESET} ] Installing mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}'"
                 )
-        else:
-            log_message_info(f"[ {Colors.GREEN}✔{Colors.RESET} ] Mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}' already installed and up to date.")
 
-    for mod_local in mods_local_current:
-        if not mod_local in mods_latest_files:
-            log_message_info(f"Deleting file {mod_local}")                
+                with open(
+                    f"{INDEX_DIRECTORY}/{mod["index"]}", "r", encoding="utf-8"
+                ) as index_file_data:
+                    index_file_string = index_file_data.read()
 
-            os.remove(f"{installation_target}/{mod_local}")
+                    _index_file_dictionary = tomllib.loads(index_file_string)
+
+                    _mod_url = _index_file_dictionary["download"]["url"]
+
+                    _mod_download_destination_path = (
+                        f"{_temp_directory_path}/{_index_file_dictionary['filename']}"
+                    )
+
+                    mod_download_and_verify(
+                        _mod_url,
+                        _mod_download_destination_path,
+                        _index_file_dictionary,
+                        mod,
+                    )
+
+                    log_message_info(f"{Colors.GREEN}✔{Colors.RESET} Installed mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}'.")
+
+                    shutil.move(
+                        _mod_download_destination_path,
+                        f"{installation_target}/{_index_file_dictionary['filename']}",
+                    )
+            else:
+                log_message_info(
+                    f"[ {Colors.GREEN}✔{Colors.RESET} ] Mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}' already installed and up to date."
+                )
+
+        for mod_local in mods_local_current:
+            if not mod_local in mods_latest_files:
+                if os.path.isfile(f"{installation_target}/{mod_local}"):
+                    log_message_info(f"Deleting file {mod_local}")
+
+                    os.remove(f"{installation_target}/{mod_local}")
