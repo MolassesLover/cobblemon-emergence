@@ -69,7 +69,7 @@ if __name__ == "__main__":
     mods_update(
         _mod_list_dictionary,
         _temp_directory_path,
-        INDEX_DIRECTORY,
+        INDEX_DIRECTORY_PATH,
         arguments.client,
         arguments.server,
     )
