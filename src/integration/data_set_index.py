@@ -57,13 +57,15 @@ if __name__ == "__main__":
     for mod_category in mod_list_dictionary:
         if mod_list_dictionary[mod_category]:
             for mod in mod_list_dictionary[mod_category]:
-                mod_path = f"{mod_category}/{os.path.basename(mods_indexed[mod['filename']])}"
+                mod_path = (
+                    f"{mod_category}/{os.path.basename(mods_indexed[mod['filename']])}"
+                )
 
                 mod.update({"index": mod_path})
-    
+
     if os.path.isfile(MOD_LIST_PATH):
         shutil.copyfile(MOD_LIST_PATH, f"{MOD_LIST_PATH}.bak")
         mod_list_string = json.dumps(mod_list_dictionary, indent=4)
 
-        with open(MOD_LIST_PATH, 'w', encoding="utf-8") as mod_list_file:
+        with open(MOD_LIST_PATH, "w", encoding="utf-8") as mod_list_file:
             mod_list_file.write(mod_list_string)
