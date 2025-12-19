@@ -256,6 +256,9 @@ def mods_update(
             case _:
                 continue
 
+        if not installation_target:
+            continue
+
         mods_latest: list = (
             mod_list_dictionary["core"] + mod_list_dictionary[mod_category]
         )
