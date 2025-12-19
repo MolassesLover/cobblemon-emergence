@@ -17,7 +17,6 @@ from dataclasses import dataclass
 import requests
 
 
-@dataclass
 class Colors:
     """
     A few ANSI escape codes in order to output colours to the terminal.
@@ -298,13 +297,15 @@ def mods_update(
                         mod,
                     )
 
-                    log_message_info(
-                        f"[ {Colors.GREEN}✔{Colors.RESET} ] Installed mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}'."
-                    )
+                    log_message_info(f"Moving {_mod_download_destination_path} to {installation_target}/{_index_file_dictionary['filename']}")
 
                     shutil.move(
                         _mod_download_destination_path,
                         f"{installation_target}/{_index_file_dictionary['filename']}",
+                    )
+
+                    log_message_info(
+                        f"[ {Colors.GREEN}✔{Colors.RESET} ] Installed mod '{Colors.BLUE}{mod["name"]}{Colors.RESET}'."
                     )
             else:
                 log_message_info(

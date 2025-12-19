@@ -16,15 +16,14 @@ sys.path.append(f"{script_directory}/../")
 from cmecore import *
 
 if __name__ == "__main__":
-    # Get the current script directory in order to obtain the index files.
     # To do: Ensure there are other search paths for the index files.
 
-    INDEX_DIRECTORY = path_to_posix(f"{script_directory}/../../data/index")
+    INDEX_DIRECTORY_PATH = path_to_posix(f"{script_directory}/../../data/index")
     DATA_PATH = f"{script_directory}/../../data"
-    CONFIG_PATH = path_to_posix(f"{DATA_PATH}/launcher.json")
-    MOD_LIST_PATH = path_to_posix(f"{DATA_PATH}/mods.json")
+    CONFIG_PATH = f"{DATA_PATH}/launcher.json"
+    MOD_LIST_PATH = f"{DATA_PATH}/mods.json"
     TEMP_DIRECTORY_WIN32 = path_to_posix(f"{Path.home()}/AppData/Local/Temp")
-    TEMP_DIRECTORY_UNIX = path_to_posix("/var/tmp")  # Hopefully compatible enough.
+    TEMP_DIRECTORY_UNIX = "/var/tmp"  # Hopefully compatible enough.
 
     _temp_directory_path: str = ""
 
