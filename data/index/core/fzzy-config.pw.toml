@@ -1,0 +1,16 @@
+filename = 'fzzy_config-0.7.4-fix1+1.20.1.jar'
+name = 'Fzzy Config'
+side = 'both'
+x-prismlauncher-loaders = [ 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '826720359552bdf40caf7763c0808ef79b737a04447857bb3c1d573db5a6766ceaacd1cdd08e28e5d4025a763b2250a46c24fe0822d2b9eed93d2e473c292b4c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/hYykXjDp/versions/E75OaTHD/fzzy_config-0.7.4-fix1%2B1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'hYykXjDp'
+version = 'E75OaTHD'

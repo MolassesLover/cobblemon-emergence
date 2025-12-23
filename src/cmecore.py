@@ -300,7 +300,9 @@ def mods_update(
                         mod,
                     )
 
-                    log_message_info(f"Moving {_mod_download_destination_path} to {installation_target}/{_index_file_dictionary['filename']}")
+                    log_message_info(
+                        f"Moving {_mod_download_destination_path} to {installation_target}/{_index_file_dictionary['filename']}"
+                    )
 
                     shutil.move(
                         _mod_download_destination_path,

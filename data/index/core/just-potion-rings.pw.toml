@@ -1,0 +1,16 @@
+filename = 'justpotionrings-fabric-1.20.[0-1]-v1.4.jar'
+name = 'Just Potion Rings'
+side = 'both'
+x-prismlauncher-loaders = [ 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '7fc75563d97bad9b331f559dcc8250c0d236d0213b80edbaf2359fc95e47082a32129420d4d77437a709a7884dd6af1810a011217d42a47ae5e8b1b3909d2770'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/6C3LNL9Q/versions/fMFZ17RT/justpotionrings-fabric-1.20.%5B0-1%5D-v1.4.jar'
+
+[update.modrinth]
+mod-id = '6C3LNL9Q'
+version = 'fMFZ17RT'

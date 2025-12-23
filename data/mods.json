@@ -865,9 +865,108 @@
             "filename": "totw_modded-fabric-1.20.1-1.0.5.jar",
             "name": "totw_modded-fabric-1.20.1-1.0.5",
             "index": "core/totw-modded.pw.toml"
+        },
+        {
+            "authors": [
+                "Blodhgarm",
+                "chyzman",
+                "Dr.Zeal"
+            ],
+            "filename": "accessories-fabric-1.0.0-beta.47+1.20.1.jar",
+            "name": "Accessories",
+            "url": "https://modrinth.com/mod/jtmvUHXj",
+            "version": "1.0.0-beta.47+1.20.1",
+            "index": "core/accessories.pw.toml"
+        },
+        {
+            "authors": [
+                "pajic"
+            ],
+            "filename": "accessorify-2.4.0-beta.4+1.20.1-fabric.jar",
+            "name": "Accessorify",
+            "url": "https://modrinth.com/mod/CVRzrXGP",
+            "version": "2.4.0-beta.4",
+            "index": "core/accessorify.pw.toml"
+        },
+        {
+            "authors": [
+                "FabricMC"
+            ],
+            "filename": "fabric-language-kotlin-1.13.8+kotlin.2.3.0.jar",
+            "name": "Fabric Language Kotlin",
+            "url": "https://modrinth.com/mod/Ha28R6CL",
+            "version": "1.13.8+kotlin.2.3.0",
+            "index": "core/fabric-language-kotlin.pw.toml"
+        },
+        {
+            "authors": [
+                "fzzyhmstrs"
+            ],
+            "filename": "fzzy_config-0.7.4-fix1+1.20.1.jar",
+            "name": "Fzzy Config",
+            "url": "https://modrinth.com/mod/hYykXjDp",
+            "version": "0.7.4-fix1+1.20.1",
+            "index": "core/fzzy-config.pw.toml"
+        },
+        {
+            "authors": [
+                "fzzyhmstrs"
+            ],
+            "filename": "fzzy_core-0.5.1+1.20.1.jar",
+            "name": "Fzzy Core",
+            "url": "https://modrinth.com/mod/LJ5wlCDr",
+            "version": "0.5.1+1.20.1",
+            "index": "core/fzzy-core.pw.toml"
+        },
+        {
+            "authors": [
+                "Toni"
+            ],
+            "filename": "immersivelanterns-fabric-1.0.6-1.20.1.jar",
+            "name": "Immersive Lanterns",
+            "url": "https://modrinth.com/mod/vskzdsyT",
+            "version": "1.0.4",
+            "index": "core/immersive-lanterns.pw.toml"
+        },
+        {
+            "authors": [
+                "Dplayend"
+            ],
+            "filename": "justpotionrings-fabric-1.20.[0-1]-v1.4.jar",
+            "name": "Just Potion Rings",
+            "url": "https://modrinth.com/mod/6C3LNL9Q",
+            "version": "1.4",
+            "index": "core/just-potion-rings.pw.toml"
+        },
+        {
+            "authors": [
+                "toni, LambdAurora"
+            ],
+            "filename": "sodiumdynamiclights-fabric-1.0.10-1.20.1.jar",
+            "name": "Sodium Dynamic Lights",
+            "url": "https://modrinth.com/mod/PxQSWIcD",
+            "version": "1.0.9",
+            "index": "core/sodium-dynamic-lights.pw.toml"
+        },
+        {
+            "authors": [
+                "Toni"
+            ],
+            "filename": "txnilib-fabric-1.0.24-1.20.1.jar",
+            "name": "TxniLib",
+            "url": "https://modrinth.com/mod/vBbPDuOs",
+            "version": "1.0.24",
+            "index": "core/txnilib.pw.toml"
         }
     ],
     "client": [
+        {
+            "filename": "jaggiesbegone-1.0-1.20.1.jar",
+            "name": "JaggiesBegone",
+            "url": "https://modrinth.com/mod/pgz6omHw",
+            "version": "1.0-1.20.1",
+            "index": "client/jaggies-begone.pw.toml"
+        },
         {
             "authors": [
                 "CreativeMD"

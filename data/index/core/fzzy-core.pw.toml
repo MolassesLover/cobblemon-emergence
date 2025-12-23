@@ -1,0 +1,16 @@
+filename = 'fzzy_core-0.5.1+1.20.1.jar'
+name = 'Fzzy Core'
+side = 'both'
+x-prismlauncher-loaders = [ 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'a5478333e93a7af3267890a775276cd109b3453a31dfa6fededae50af5505e283e207da9ba3e39e10a4f7f55ebda97b069743092e1c9576287eae002397e0f46'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/LJ5wlCDr/versions/G6CaE33O/fzzy_core-0.5.1%2B1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'LJ5wlCDr'
+version = 'G6CaE33O'

@@ -1,13 +1,15 @@
 import json
-import tomllib
 import os
 import shutil
+import sys
+import tomllib
 
 from pathlib import PureWindowsPath, Path
 
-# Like the CLI, only doing this because it's not an conventionally distributed module.
 script_directory = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(f"{script_directory}/../")
+
+from cmecore import *
 
 
 if __name__ == "__main__":
