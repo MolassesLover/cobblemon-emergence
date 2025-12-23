@@ -1166,16 +1166,6 @@
             "index": "client/iris.pw.toml"
         },
         {
-            "authors": [
-                "LambdAurora"
-            ],
-            "filename": "lambdynamiclights-4.4.0+1.20.1.jar",
-            "name": "LambDynamicLights",
-            "url": "https://modrinth.com/mod/yBW8D80W",
-            "version": "4.4.0+1.20.1",
-            "index": "client/lambdynamiclights.pw.toml"
-        },
-        {
             "filename": "MRU-1.0.4+1.20.1+fabric.jar",
             "name": "MRU-1.0.4+1.20.1+fabric",
             "index": "client/mru.pw.toml"
