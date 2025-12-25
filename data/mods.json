@@ -957,6 +957,16 @@
             "url": "https://modrinth.com/mod/vBbPDuOs",
             "version": "1.0.24",
             "index": "core/txnilib.pw.toml"
+        },
+        {
+            "authors": [
+                "Benimatic, AtomicBlom, Drullkus, Killer_Demon, quadraxis, Tamaized, williewillus, Andromander, GizmoTheMoonPig, jodlodi"
+            ],
+            "filename": "twilightforest-fabric-1.20.1-1.4.7.jar",
+            "name": "The Twilight Forest",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest",
+            "version": "NONE",
+            "index": "core/the-twilight-forest-unofficial.pw.toml"
         }
     ],
     "client": [

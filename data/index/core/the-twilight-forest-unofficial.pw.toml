@@ -1,0 +1,16 @@
+filename = 'twilightforest-fabric-1.20.1-1.4.7.jar'
+name = 'The Twilight Forest Unofficial'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'd10abc356036f80093e92b6e9b632d04c8ca37cdd76f73f8b17924e48b6f6f4ee1be7aa563c7f8b02616c6738bf4f88c96b72ba3fffd342920eeefccdca4f696'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/1XoXkBdT/versions/QlDGdZxj/twilightforest-fabric-1.20.1-1.4.7.jar'
+
+[update.modrinth]
+mod-id = '1XoXkBdT'
+version = 'QlDGdZxj'
