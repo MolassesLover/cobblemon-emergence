@@ -967,6 +967,73 @@
             "url": "https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest",
             "version": "NONE",
             "index": "core/the-twilight-forest-unofficial.pw.toml"
+        },
+        {
+            "authors": [
+                "Autovw"
+            ],
+            "filename": "advancednetherite-fabric-2.1.3-1.20.1.jar",
+            "name": "Advanced Netherite",
+            "url": "https://modrinth.com/mod/CFX9ftUJ",
+            "version": "2.1.3-1.20.1",
+            "index": "core/advanced-netherite.pw.toml"
+        },
+        {
+            "authors": [
+                "anticode",
+                "Prismatica"
+            ],
+            "filename": "astro_reforged-1.1.2.jar",
+            "name": "Astro! Reforged",
+            "url": "https://modrinth.com/mod/m14J3C9G",
+            "version": "1.1.2",
+            "index": "core/astro-reforged.pw.toml"
+        },
+        {
+            "authors": [
+                "Pufferfish"
+            ],
+            "filename": "puffish_attributes-0.8.0-1.20-fabric.jar",
+            "name": "Pufferfish's Attributes",
+            "url": "https://modrinth.com/mod/FCFcFw09",
+            "version": "0.8.0",
+            "index": "core/attributes.pw.toml"
+        },
+        {
+            "authors": [
+                "Gaider10",
+                "Fusion Flux",
+                "qouteall",
+                "CyborgCabbage",
+                "other contributors (see GitHub)"
+            ],
+            "filename": "gravity-changer-1.1.2+mc1.20.1.jar",
+            "name": "Gravity Changer (qouteall fork)",
+            "url": "https://modrinth.com/mod/bqOyYdKi",
+            "version": "1.1.2",
+            "index": "core/gravity-api-fork.pw.toml"
+        },
+        {
+            "authors": [
+                "TriQue"
+            ],
+            "filename": "mythicupgrades-4.2.0+mc1.20.1.jar",
+            "name": "Mythic Upgrades",
+            "url": "https://modrinth.com/mod/ERH7cFoy",
+            "version": "4.2.0+mc1.20.1",
+            "index": "core/mythic-upgrades.pw.toml"
+        },
+        {
+            "authors": [
+                "glisco",
+                "BasiqueEvangelist",
+                "Noaaan"
+            ],
+            "filename": "owo-lib-0.11.2+1.20.jar",
+            "name": "o\u03c9o",
+            "url": "https://modrinth.com/mod/ccKDOlHs",
+            "version": "0.11.2+1.20",
+            "index": "core/owo-lib.pw.toml"
         }
     ],
     "client": [
@@ -1332,5 +1399,27 @@
             "index": "client/vse-gamepad-lite.pw.toml"
         }
     ],
-    "server": []
+    "server": [
+        {
+            "authors": [
+                "Jolkert"
+            ],
+            "filename": "swept_away-1.0.1-1.20.1.jar",
+            "name": "Swept Away",
+            "url": "https://modrinth.com/mod/rRstwTZl",
+            "version": "1.0.1",
+            "index": "server/swept-away.pw.toml"
+        },
+        {
+            "authors": [
+                "HO-Artisan",
+                "Chemiofitor"
+            ],
+            "filename": "flame_sweeping-fabric-2.1.jar",
+            "name": "Flame Sweeping",
+            "url": "https://modrinth.com/mod/KknnracL",
+            "version": "2.1",
+            "index": "server/flame-sweeping.pw.toml"
+        }
+    ]
 }

@@ -1,0 +1,16 @@
+filename = 'advancednetherite-fabric-2.1.3-1.20.1.jar'
+name = 'Advanced Netherite'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'fb94238f5fc928d9c8ca4881c7d3ae8fb1f2a014e2ddf2fc3264f8070a37b3c9f6c163590c8d0fa31fdfe18573e65fea7af64c990057262e77a32e73e37b49de'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/CFX9ftUJ/versions/KLFf6PpA/advancednetherite-fabric-2.1.3-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'CFX9ftUJ'
+version = 'KLFf6PpA'

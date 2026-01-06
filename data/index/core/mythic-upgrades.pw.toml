@@ -1,0 +1,16 @@
+filename = 'mythicupgrades-4.2.0+mc1.20.1.jar'
+name = 'Mythic Upgrades'
+side = 'both'
+x-prismlauncher-loaders = [ 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'f96aa17881ac624fa39e55d97d32db5f3da7b429297898a7192411aac9a5c28069d2b08f6549f138d25b4a000ec8fe1dab9323022f840b9e0e95cf9aab0ce15a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ERH7cFoy/versions/cD4zn9kb/mythicupgrades-4.2.0%2Bmc1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'ERH7cFoy'
+version = 'cD4zn9kb'

@@ -1,0 +1,16 @@
+filename = 'swept_away-1.0.1-1.20.1.jar'
+name = 'Swept Away'
+side = 'server'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'c639133801c0072b222b5629169689c80ae37cfd35979680883aa9b6b520df347e6953fa9fa17a67cd7986ef452da9a9aa56c3bb985613f1714a24b4f533e21a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/rRstwTZl/versions/3AWytKQF/swept_away-1.0.1-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'rRstwTZl'
+version = '3AWytKQF'
