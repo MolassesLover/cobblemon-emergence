@@ -1,0 +1,17 @@
+filename = 'trulytreasures-1.20-3.0.0.jar'
+name = 'Truly Treasures'
+side = ''
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20', '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.20-3.0.0-fabric'
+
+[download]
+hash = 'b0794e8b140a4abeaaf2de9f5893cae12f5bd37fad7b21713e12f173709a0d598b6dcda9281d3b3242e61682b41c8ae8c25961f91d87d7b50fab3065db1d17ea'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/YUTKRI5S/versions/GubltxnR/trulytreasures-1.20-3.0.0.jar'
+
+[update.modrinth]
+mod-id = 'YUTKRI5S'
+version = 'GubltxnR'

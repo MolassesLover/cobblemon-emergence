@@ -1,0 +1,17 @@
+filename = 'weapons_expanded_1.20.1_1.5.3_fabric.jar'
+name = 'Weapons Expanded'
+side = ''
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.5.3'
+
+[download]
+hash = 'eec27909089c8bba9866287b9e1683e905edee3ae5a69c4c654d3324b10c2ececd22d1e4282f12b7ae1da6551d426c3eb8eb11d934be953244e0dae806284bd0'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/8pBLL0kb/versions/RcQXIc3z/weapons_expanded_1.20.1_1.5.3_fabric.jar'
+
+[update.modrinth]
+mod-id = '8pBLL0kb'
+version = 'RcQXIc3z'

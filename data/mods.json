@@ -1034,6 +1034,310 @@
             "url": "https://modrinth.com/mod/ccKDOlHs",
             "version": "0.11.2+1.20",
             "index": "core/owo-lib.pw.toml"
+        },
+        {
+            "authors": [
+                "Rick South"
+            ],
+            "filename": "bottleyourxp-1.20.1-3.5.jar",
+            "name": "Bottle Your Xp",
+            "url": "https://modrinth.com/mod/bG2afBot",
+            "version": "3.5",
+            "index": "core/bottle-your-xp.pw.toml"
+        },
+        {
+            "authors": [
+                "Ludichat",
+                "Fuzuki"
+            ],
+            "filename": "Cobbreeding-fabric-1.7.4.jar",
+            "name": "Cobbreeding",
+            "url": "https://modrinth.com/mod/ItmVb4zY",
+            "version": "1.7.4",
+            "index": "core/cobbreeding.pw.toml"
+        },
+        {
+            "authors": [
+                "Artist/Creator - Joosh",
+                "Dev - ThatGravyBoat"
+            ],
+            "filename": "creeperoverhaul-3.0.2-fabric.jar",
+            "name": "Creeper Overhaul",
+            "url": "https://modrinth.com/mod/MI1LWe93",
+            "version": "3.0.2",
+            "index": "core/creeper-overhaul.pw.toml"
+        },
+        {
+            "authors": [
+                "Joosh, EterDelta"
+            ],
+            "filename": "crittersandcompanions-fabric-1.20.1-2.3.5.jar",
+            "name": "Critters and Companions",
+            "url": "https://modrinth.com/mod/Yd4wb5wZ",
+            "version": "1.20.1-2.3.5",
+            "index": "core/critters-and-companions.pw.toml"
+        },
+        {
+            "authors": [
+                "Fneifnox"
+            ],
+            "filename": "custom-mob-attributes-1.20-3.0.4.jar",
+            "name": "Custom Mob Attributes",
+            "url": "https://modrinth.com/mod/f12jSNQc",
+            "version": "3.0.4",
+            "index": "core/custom-mob-attributes.pw.toml"
+        },
+        {
+            "authors": [
+                "Fuzs"
+            ],
+            "filename": "EasyMagic-v8.0.1-1.20.1-Fabric.jar",
+            "name": "Easy Magic",
+            "url": "https://modrinth.com/mod/9hx3AbJM",
+            "version": "8.0.1",
+            "index": "core/easy-magic.pw.toml"
+        },
+        {
+            "authors": [
+                "Fuzs"
+            ],
+            "filename": "EnchantingInfuser-v8.0.3-1.20.1-Fabric.jar",
+            "name": "Enchanting Infuser",
+            "url": "https://modrinth.com/mod/ePv85y52",
+            "version": "8.0.3",
+            "index": "core/enchanting-infuser.pw.toml"
+        },
+        {
+            "authors": [
+                "robdog777"
+            ],
+            "filename": "enchantments-plus-fabric-1.2.2+1.20.1.jar",
+            "name": "Enchantments Plus",
+            "url": "https://modrinth.com/mod/Kfr0BQO9",
+            "version": "1.2.2+1.20.1",
+            "index": "core/enchantments-plus.pw.toml"
+        },
+        {
+            "authors": [
+                "Alex Nijjar",
+                "Joosh"
+            ],
+            "filename": "endermanoverhaul-fabric-1.20.1-1.0.4.jar",
+            "name": "Enderman Overhaul",
+            "url": "https://modrinth.com/mod/Lq6ojcWv",
+            "version": "1.0.4",
+            "index": "core/enderman-overhaul.pw.toml"
+        },
+        {
+            "authors": [
+                "Fuzs"
+            ],
+            "filename": "ForgeConfigAPIPort-v8.0.3-1.20.1-Fabric.jar",
+            "name": "Forge Config API Port",
+            "url": "https://modrinth.com/mod/ohNO6lps",
+            "version": "8.0.3",
+            "index": "core/forge-config-api-port.pw.toml"
+        },
+        {
+            "authors": [
+                "notblue"
+            ],
+            "filename": "fortunate-ancient-debris-3.5.1.jar",
+            "name": "Fortunate Ancient Debris",
+            "url": "https://modrinth.com/mod/eBvPjIeN",
+            "version": "3.5.1",
+            "index": "core/fortunate-ancient-debris.pw.toml"
+        },
+        {
+            "authors": [
+                "Gecko, Eliot, AzureDoom, DerToaster, Tslat, Witixin"
+            ],
+            "filename": "geckolib-fabric-1.20.1-4.8.2.jar",
+            "name": "GeckoLib 4",
+            "url": "https://modrinth.com/mod/8BmcQJ2H",
+            "version": "4.8.2",
+            "index": "core/geckolib.pw.toml"
+        },
+        {
+            "authors": [
+                "Joosh7889, Xylonity"
+            ],
+            "filename": "ghosts-fabric-1.20.1-1.2.2.jar",
+            "name": "Ghosts",
+            "url": "https://modrinth.com/mod/gJKLGvbS",
+            "version": "1.2.2",
+            "index": "core/ghost.pw.toml"
+        },
+        {
+            "authors": [
+                "Alex Nijjar",
+                "Joosh",
+                "3xpl01t"
+            ],
+            "filename": "golemoverhaul-fabric-1.20.1-1.0.1.jar",
+            "name": "Golem Overhaul",
+            "url": "https://modrinth.com/mod/qEYs2G9A",
+            "version": "1.0.1",
+            "index": "core/golem-overhaul.pw.toml"
+        },
+        {
+            "authors": [
+                "MrSterner"
+            ],
+            "filename": "guardvillagers-2.0.9-1.20.1.jar",
+            "name": "GuardVillagers",
+            "url": "https://modrinth.com/mod/59rkB3YY",
+            "version": "2.0.9-1.20.1",
+            "index": "core/guard-villagers-(fabricquilt).pw.toml"
+        },
+        {
+            "authors": [
+                "Alex Nijjar",
+                "Kekie6"
+            ],
+            "filename": "handcrafted-fabric-1.20.1-3.0.6.jar",
+            "name": "Handcrafted",
+            "url": "https://modrinth.com/mod/pJmCFF0p",
+            "version": "3.0.6",
+            "index": "core/handcrafted.pw.toml"
+        },
+        {
+            "authors": [
+                "Grend"
+            ],
+            "filename": "Iceberg-1.20.1-fabric-1.1.25.jar",
+            "name": "Iceberg",
+            "url": "https://modrinth.com/mod/5faXoLqX",
+            "version": "1.1.25",
+            "index": "core/iceberg.pw.toml"
+        },
+        {
+            "authors": [
+                "Joosh",
+                "CodexAdrian"
+            ],
+            "filename": "lookinsharp-fabric-1.20.1-1.0.2.jar",
+            "name": "Lookin' Sharp!",
+            "url": "https://modrinth.com/mod/RLMXoOXH",
+            "version": "1.0.2",
+            "index": "core/lookin-sharp.pw.toml"
+        },
+        {
+            "authors": [
+                "Noobanidus",
+                "ZestyBlaze",
+                "embeddedt"
+            ],
+            "filename": "lootr-fabric-1.20-0.7.35.86.jar",
+            "name": "Lootr",
+            "url": "https://modrinth.com/mod/EltpO5cN",
+            "version": "0.7.35.86",
+            "index": "core/lootr.pw.toml"
+        },
+        {
+            "authors": [
+                "Fuzs"
+            ],
+            "filename": "PuzzlesLib-v8.1.33-1.20.1-Fabric.jar",
+            "name": "Puzzles Lib",
+            "url": "https://modrinth.com/mod/QAGBst4M",
+            "version": "8.1.33",
+            "index": "core/puzzles-lib.pw.toml"
+        },
+        {
+            "authors": [
+                "ThatGravyBoat",
+                "Epic_Oreo"
+            ],
+            "filename": "resourcefullib-fabric-1.20.1-2.1.29.jar",
+            "name": "Resourceful Lib",
+            "url": "https://modrinth.com/mod/G1hIVOrD",
+            "version": "2.1.29",
+            "index": "core/resourceful-lib.pw.toml"
+        },
+        {
+            "authors": [
+                "ThatGravyBoat"
+            ],
+            "filename": "resourcefulconfig-fabric-1.20.1-2.1.3.jar",
+            "name": "Resourcefulconfig",
+            "url": "https://modrinth.com/mod/M1953qlQ",
+            "version": "2.1.3",
+            "index": "core/resourceful-config.pw.toml"
+        },
+        {
+            "authors": [
+                "Joosh",
+                "YUNGNICKYOUNG",
+                "HellionGames",
+                "Refresh Studios"
+            ],
+            "filename": "Ribbits-1.20.1-Fabric-3.0.5.jar",
+            "name": "Ribbits",
+            "url": "https://modrinth.com/mod/8YcE8y4T",
+            "version": "1.20.1-Fabric-3.0.5",
+            "index": "core/ribbits.pw.toml"
+        },
+        {
+            "authors": [
+                "Up"
+            ],
+            "filename": "soulbound-3.1.0.jar",
+            "name": "Soulbound",
+            "url": "https://modrinth.com/mod/9QyjzbTh",
+            "version": "3.1.0",
+            "index": "core/soulbound.pw.toml"
+        },
+        {
+            "authors": [
+                "Up"
+            ],
+            "filename": "sparkweave-0.8.8.jar",
+            "name": "Sparkweave Engine",
+            "url": "https://modrinth.com/mod/nf68xfAw",
+            "version": "0.8.8",
+            "index": "core/sparkweave.pw.toml"
+        },
+        {
+            "authors": [
+                "Fourmisain"
+            ],
+            "filename": "TaxFreeLevels-1.4.14-fabric-1.20.1.jar",
+            "name": "Tax Free Levels",
+            "url": "https://modrinth.com/mod/jCBrrLTs",
+            "version": "1.4.14",
+            "index": "core/tax-free-levels.pw.toml"
+        },
+        {
+            "authors": [
+                "DenisMasterHerobrine",
+                "VeiTr"
+            ],
+            "filename": "the_afterdark-1.20.1-fabric-1.0.3.1.jar",
+            "name": "The Afterdark",
+            "url": "https://modrinth.com/mod/EjqfdsbN",
+            "version": "1.0.3.1",
+            "index": "core/the-afterdark.pw.toml"
+        },
+        {
+            "authors": [
+                "Ineffa"
+            ],
+            "filename": "trulytreasures-1.20-3.0.0.jar",
+            "name": "Truly Treasures",
+            "url": "https://modrinth.com/mod/YUTKRI5S",
+            "version": "1.20-3.0.0",
+            "index": "core/truly-treasures.pw.toml"
+        },
+        {
+            "authors": [
+                "Angelic"
+            ],
+            "filename": "weapons_expanded_1.20.1_1.5.3_fabric.jar",
+            "name": "Weapons Expanded",
+            "url": "https://modrinth.com/mod/8pBLL0kb",
+            "version": "1.5.0",
+            "index": "core/weaponsexpanded.pw.toml"
         }
     ],
     "client": [
@@ -1281,16 +1585,6 @@
         },
         {
             "authors": [
-                "opekope2"
-            ],
-            "filename": "optigui-2.3.0-beta.9+1.20.jar",
-            "name": "OptiGUI",
-            "url": "https://modrinth.com/mod/JuksLGBQ",
-            "version": "2.3.0-beta.9+1.20",
-            "index": "client/optigui.pw.toml"
-        },
-        {
-            "authors": [
                 "Hurricaaane (Ha3)",
                 "Sollace"
             ],
@@ -1397,6 +1691,16 @@
             "url": "https://modrinth.com/mod/o5w41Sp3",
             "version": "1.0.0.lt-1.20.1-Fabric",
             "index": "client/vse-gamepad-lite.pw.toml"
+        },
+        {
+            "authors": [
+                "Grend"
+            ],
+            "filename": "Highlighter-1.20.1-fabric-1.1.9.jar",
+            "name": "Highlighter",
+            "url": "https://modrinth.com/mod/cVNW5lr6",
+            "version": "1.1.9",
+            "index": "client/item-highlighter.pw.toml"
         }
     ],
     "server": [

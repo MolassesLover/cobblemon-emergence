@@ -1,0 +1,17 @@
+filename = 'soulbound-3.1.0.jar'
+name = 'Soulbound'
+side = ''
+x-prismlauncher-loaders = [ 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.1.0+Fabric'
+
+[download]
+hash = 'e74c38cc85842cbecfa481a518ec9e33071054439320aa12b053d6a756054aad2ed67d4921d7ec98fe58bee9b4805920aebf1a11821cebbc213df2f347b5095a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/9QyjzbTh/versions/vGzO6Ue7/soulbound-3.1.0.jar'
+
+[update.modrinth]
+mod-id = '9QyjzbTh'
+version = 'vGzO6Ue7'
