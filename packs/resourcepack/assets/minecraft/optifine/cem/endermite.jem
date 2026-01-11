@@ -1,0 +1,72 @@
+{
+	"credit": "Made with Blockbench",
+	"texture": "textures/entity/endermite.png",
+	"textureSize": [32, 32],
+	"models": [
+		{
+			"part": "body1",
+			"id": "body1",
+			"invertAxis": "xy",
+			"translate": [0, -3, 3.5],
+			"boxes": [
+				{"coordinates": [-2, 0, -3.5, 4, 3, 1], "textureOffset": [17, 0]}
+			],
+			"submodels": [
+				{
+					"id": "right_antennae",
+					"invertAxis": "xy",
+					"translate": [1, 2, -3.5],
+					"rotate": [10, -17.5, 0],
+					"boxes": [
+						{"coordinates": [0, 0, -6, 0, 4, 6], "textureOffset": [0, 10]}
+					]
+				},
+				{
+					"id": "left_antennae",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [-1, 2, -3.5],
+					"rotate": [10, 17.5, 0],
+					"boxes": [
+						{"coordinates": [0, 0, -6, 0, 4, 6], "textureOffset": [0, 10]}
+					]
+				}
+			]
+		},
+		{
+			"part": "body2",
+			"id": "body2",
+			"invertAxis": "xy",
+			"translate": [0, -4, 0],
+			"boxes": [
+				{"coordinates": [-3, 0, -2.5, 6, 5, 5], "textureOffset": [0, 0]},
+				{"coordinates": [0, 5, -3.5, 0, 3, 7], "textureOffset": [10, 3]}
+			]
+		},
+		{
+			"part": "body3",
+			"id": "body3",
+			"invertAxis": "xy",
+			"translate": [0, -3, -3],
+			"boxes": [
+				{"coordinates": [-2, 0, 2.5, 4, 3, 3], "textureOffset": [16, 13]}
+			],
+			"submodels": [
+				{
+					"id": "tail",
+					"invertAxis": "xy",
+					"translate": [0, 2, 5.5],
+					"boxes": [
+						{"coordinates": [-2.5, 0, 0, 5, 0, 4], "textureOffset": [12, 19]}
+					]
+				}
+			]
+		},
+		{
+			"part": "body4",
+			"id": "body4",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		}
+	]
+}

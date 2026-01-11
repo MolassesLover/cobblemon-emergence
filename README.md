@@ -11,10 +11,25 @@ as such- progress is, typically, defined by stat increases.
 
 ## Licenses
 
+### Source
+This is an open-source project, licensed under the BSD 3-Clause license. The
+terms of this license are described in the [`LICENSE.md`](LICENSE.md) file, 
+found within this repository's root directory.
+
 ### Metadata
 All the metadata of this project is licensed into the public domain, through
-the Unlicense.
+the Unlicense. The terms of this license are described in the
+[`docs/licenses/UNLICENSE.md`](docs/licenses/UNLICENSE.md) file.
 
-### Launcher
+This license applies to all the subcontents of the `data` directory.
 
-The launcher is open-source, licensed under the BSD 3-Clause license.
+### Assets
+Custom assets (models, textures, etc.), unless specified elswhere, are
+licensed under the Creative Commons Attribution-NonCommercial-ShareAlike
+license. Its terms are specified in the 
+[`docs/licenses/CC-BY-SA.md`](docs/licenses/CC-BY-SA.md) file.
+
+Many assets are sourced from third-parties under their own terms, and as such
+are not available under these terms. The licenses of third-party assets along
+with their own respective license files are documented within the
+[`packs/resourcepack/CREDITS.md`](packs/resourcepack/CREDITS.md) file.

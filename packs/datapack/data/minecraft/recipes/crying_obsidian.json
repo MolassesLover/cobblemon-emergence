@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "minecraft:obsidian",
+      "minecraft:lapis_lazuli"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:crying_obsidian"
+  }
+}

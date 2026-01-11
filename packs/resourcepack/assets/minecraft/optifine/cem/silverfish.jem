@@ -1,0 +1,131 @@
+{
+	"credit": "Made with Blockbench",
+	"texture": "textures/entity/silverfish.png",
+	"textureSize": [32, 32],
+	"models": [
+		{
+			"part": "body2",
+			"id": "body2",
+			"invertAxis": "xy",
+			"translate": [0, -3, 5],
+			"boxes": [
+				{"coordinates": [-2, 0, -6, 4, 2, 2], "textureOffset": [16, 0]}
+			],
+			"submodels": [
+				{
+					"id": "right_antennae",
+					"invertAxis": "xy",
+					"translate": [1, 1, -5],
+					"rotate": [0, -22.5, 0],
+					"boxes": [
+						{"coordinates": [0, -1, -8, 0, 5, 8], "textureOffset": [0, 0]}
+					]
+				},
+				{
+					"id": "left_antennae",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [-1, 1, -5],
+					"rotate": [0, 22.5, 0],
+					"boxes": [
+						{"coordinates": [0, -1, -8, 0, 5, 8], "textureOffset": [0, 0]}
+					]
+				}
+			]
+		},
+		{
+			"part": "body3",
+			"id": "body3",
+			"invertAxis": "xy",
+			"translate": [0, -4, 2.5],
+			"boxes": [
+				{"coordinates": [-3, 0, -4, 6, 3, 4], "textureOffset": [0, 0]}
+			]
+		},
+		{
+			"part": "body4",
+			"id": "body4",
+			"invertAxis": "xy",
+			"translate": [0, -3, -0.5],
+			"boxes": [
+				{"coordinates": [-2, 0, 0, 4, 3, 2], "textureOffset": [14, 15]}
+			]
+		},
+		{
+			"part": "body5",
+			"id": "body5",
+			"invertAxis": "xy",
+			"translate": [0, -2, -3.5],
+			"boxes": [
+				{"coordinates": [-2, 0, 2, 4, 2, 3], "textureOffset": [0, 15]}
+			]
+		},
+		{
+			"part": "body6",
+			"id": "body6",
+			"invertAxis": "xy",
+			"translate": [0, -1, -6],
+			"boxes": [
+				{"coordinates": [-1, 0, 5, 2, 1, 2], "textureOffset": [0, 20]}
+			],
+			"submodels": [
+				{
+					"id": "tails",
+					"invertAxis": "xy",
+					"translate": [0, 1, 7],
+					"submodels": [
+						{
+							"id": "left_tail",
+							"invertAxis": "xy",
+							"translate": [-1, -1, 0],
+							"rotate": [0, -22.5, 0],
+							"boxes": [
+								{"coordinates": [0, 0, 0, 0, 2, 6], "textureOffset": [10, 7]}
+							]
+						},
+						{
+							"id": "right_tail",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [1, -1, 0],
+							"rotate": [0, 22.5, 0],
+							"boxes": [
+								{"coordinates": [0, 0, 0, 0, 2, 6], "textureOffset": [10, 7]}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "body1",
+			"id": "body1",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "body7",
+			"id": "body7",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "wing1",
+			"id": "wing1",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "wing2",
+			"id": "wing2",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "wing3",
+			"id": "wing3",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		}
+	]
+}

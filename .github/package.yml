@@ -1,0 +1,31 @@
+name: Package
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v5
+      with:
+        lfs: true
+
+    - name: Install dependencies
+      run: |
+        apt-get -y update
+        apt-get -y upgrade
+        apt-get -y install zip
+
+    - name: Run script 
+      run: |
+        sh package.sh
+    
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        path: build\emergence-*.zip*
