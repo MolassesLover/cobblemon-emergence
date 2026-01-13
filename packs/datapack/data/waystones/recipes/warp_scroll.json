@@ -1,0 +1,26 @@
+{
+  "result": {
+    "item": "waystones:warp_scroll",
+    "count": 3
+  },
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DTD",
+    "DED",
+    "PPP"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "T": {
+      "item": "the_afterdark:teleport_catalyst"
+    }
+  }
+}

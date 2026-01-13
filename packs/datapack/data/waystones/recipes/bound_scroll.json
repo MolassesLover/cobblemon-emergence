@@ -1,0 +1,29 @@
+{
+  "result": {
+    "item": "waystones:bound_scroll",
+    "count": 3
+  },
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DTD",
+    "AEA",
+    "PPP"
+  ],
+  "key": {
+    "T": {
+      "item": "the_afterdark:teleport_catalyst"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "E": {
+      "item": "endermanoverhaul:soul_pearl"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  }
+}

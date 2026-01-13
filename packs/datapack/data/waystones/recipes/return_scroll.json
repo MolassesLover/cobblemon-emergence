@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "waystones:return_scroll",
+    "count": 3
+  },
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GEG",
+    "PPP"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "the_afterdark:teleport_catalyst"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    }
+  }
+}
