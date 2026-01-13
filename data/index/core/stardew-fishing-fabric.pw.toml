@@ -1,0 +1,17 @@
+filename = 'stardewfishing-fabric-1.3.1.jar'
+name = 'Stardew Fishing Fabric'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1', '1.20.2', '1.20.2', '1.20.3', '1.20.3' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.3.1'
+
+[download]
+hash = '137729a3b78756b19a061cbf7e24394f07a711aa5c7bb4a74c60f389caf8411626435ad03e039080abc372f6eab0b823b1a193aff44d37b83c15045d702c80c8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/9wJhd9x6/versions/HWz0cRcl/stardewfishing-fabric-1.3.1.jar'
+
+[update.modrinth]
+mod-id = '9wJhd9x6'
+version = 'HWz0cRcl'
