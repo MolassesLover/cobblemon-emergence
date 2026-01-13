@@ -1338,6 +1338,26 @@
             "url": "https://modrinth.com/mod/8pBLL0kb",
             "version": "1.5.0",
             "index": "core/weaponsexpanded.pw.toml"
+        },
+        {
+            "authors": [
+                "Fuzs"
+            ],
+            "filename": "TradingPost-v8.0.2-1.20.1-Fabric.jar",
+            "name": "Trading Post",
+            "url": "https://modrinth.com/mod/8pcjMDgj",
+            "version": "8.0.2",
+            "index": "core/trading-post.pw.toml"
+        },
+        {
+            "authors": [
+                "supersaiyansubtlety"
+            ],
+            "filename": "villager-see-villager-do-1.1.12-b2+MC1.20-1.20.1.jar",
+            "name": "Villager See, Villager Do",
+            "url": "https://modrinth.com/mod/nCJ3OD1g",
+            "version": "1.1.12-b2",
+            "index": "core/villager-see-villager-do.pw.toml"
         }
     ],
     "client": [
