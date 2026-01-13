@@ -1213,17 +1213,6 @@
         },
         {
             "authors": [
-                "Joosh",
-                "CodexAdrian"
-            ],
-            "filename": "lookinsharp-fabric-1.20.1-1.0.2.jar",
-            "name": "Lookin' Sharp!",
-            "url": "https://modrinth.com/mod/RLMXoOXH",
-            "version": "1.0.2",
-            "index": "core/lookin-sharp.pw.toml"
-        },
-        {
-            "authors": [
                 "Noobanidus",
                 "ZestyBlaze",
                 "embeddedt"
